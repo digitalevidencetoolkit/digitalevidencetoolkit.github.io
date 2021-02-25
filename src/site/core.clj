@@ -33,7 +33,7 @@
 (defn newsletter-embed []
   [:iframe {:scrolling "no"
             :width "100%"
-            :height "320"
+            :height "280"
             :frameborder "0"
             :src "https://digitalevidencetoolkit.substack.com/embed"}])
 
@@ -46,7 +46,7 @@
 (defn page [data]
   (hp/html5
    (head)
-   [:body {:class "w-80 center pv5"}
+   [:body {:class "w-80 mw100-ns mw6-l center pv5"}
     (header)
     [:section {:class "pv0"}
      ;; [:a {:href "/"} "Home"]
