@@ -27,7 +27,10 @@
 
 (defn header []
   [:header
-   [:h1 {:class "f1 lh-title"}
+   [:div {:class "tc pa4"}
+    [:img {:class "br-100 pa1 ba b--black-10 h3 w3"
+           :src "logo.png"}]]
+   [:h1 {:class "f1 lh-title mt0"}
     "The Digital Evidence Preservation Toolkit"]])
 
 (defn newsletter-embed []
@@ -49,7 +52,6 @@
    [:body {:class "w-80 mw100-ns mw6-l center pv5"}
     (header)
     [:section {:class "pv0"}
-     ;; [:a {:href "/"} "Home"]
      (-> data :entry :content)]
     [:section
      (newsletter-embed)]
