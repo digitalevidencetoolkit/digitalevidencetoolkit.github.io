@@ -19,7 +19,24 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
         
-      - name: Build and Deploy
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '15.0.2'
+          java-package: jdk
+          architecture: x64
+
+      - uses: DeLaGuardo/setup-clojure@master
+        with:
+          cli: '1.8.0'
+          boot: '2.7.2'
+          
+      - name: Show boot version
+        run: boot -V
+
+      - name: Build static content in target/
+        run: boot build target
+        
+      - name: Deploy static assets to GH Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ghpat }}
