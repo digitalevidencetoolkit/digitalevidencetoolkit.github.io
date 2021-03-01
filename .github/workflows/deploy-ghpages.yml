@@ -19,6 +19,17 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
         
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.22.1'
+
+      - name: Use latest NPM
+        run: sudo npm i -g npm
+
+      - name: Install dependencies
+        run: npm install -g postcss-cli postcss autoprefixer
+
       - uses: actions/setup-java@v1
         with:
           java-version: '15.0.2'
