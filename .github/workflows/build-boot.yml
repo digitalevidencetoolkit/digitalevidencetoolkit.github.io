@@ -1,0 +1,28 @@
+name: Build static with Boot
+
+on:
+  push:
+    branches: [ main ]
+
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - uses: DeLaGuardo/setup-graalvm@2.0
+        with:
+          graalvm-version: '19.3.1.java8'
+          
+      - uses: DeLaGuardo/setup-clojure@master
+        with:
+          cli: '1.8.0'
+          boot: '2.7.2'
+
+      - run: boot -V
