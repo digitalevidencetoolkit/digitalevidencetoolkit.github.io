@@ -37,7 +37,7 @@
            :type "image/png"}]
     [:title "Digital Evidence Toolkit"]
     (analytics)
-    (hp/include-css "/site.main.css")])
+    (hp/include-css "site.main.css")])
 
 (defn header []
   [:header
