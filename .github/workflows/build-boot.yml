@@ -18,7 +18,7 @@ jobs:
       
       - uses: DeLaGuardo/setup-graalvm@2.0
         with:
-          graalvm-version: '19.3.1.java8'
+           graalvm-version: '19.3.0.java8'
           
       - uses: DeLaGuardo/setup-clojure@master
         with:
