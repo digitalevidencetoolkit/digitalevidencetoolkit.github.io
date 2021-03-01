@@ -21,4 +21,14 @@ jobs:
         
       - name: Run Docker build
         run: docker build -t perun-serve .
+        
+      - name: Write static files
+        run: docker run perun-serve
+        
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ghpat }}
+          BRANCH: gh-pages
+          FOLDER: target
 
