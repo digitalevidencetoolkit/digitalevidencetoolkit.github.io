@@ -54,5 +54,5 @@ WORKDIR /perun/
 EXPOSE 3000
 RUN /usr/bin/boot build target
 
-CMD /usr/bin/boot build target
-# CMD /usr/bin/boot dev
+# CMD /usr/bin/boot build target
+CMD /usr/bin/boot dev

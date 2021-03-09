@@ -24,6 +24,6 @@
 (deftask dev []
   (comp (watch)
         (build)
-        (perun/inject-scripts :scripts       #{"js/livereload.js"})
+        (perun/inject-scripts :scripts       #{"js/livereload.js", "js/analytics.js"})
         (livereload           :asset-path    "public" :filter #"\.(css|html|js)$")
         (http/serve           :resource-root "public")))
