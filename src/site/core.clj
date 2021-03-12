@@ -31,7 +31,7 @@
    [:div {:class "tc pa4"}
     [:img {:class "br-100 pa1 ba b--black-10 h3 w3"
            :src "logo.png"}]]
-   [:h1 {:class "f1 lh-title mt0"}
+   [:h1 {:class "f1 tc lh-title mt0"}
     "The Digital Evidence Preservation Toolkit"]])
 
 (defn newsletter-embed []
