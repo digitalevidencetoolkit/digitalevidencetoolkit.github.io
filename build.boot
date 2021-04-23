@@ -1,13 +1,13 @@
 (set-env!
-  :source-paths   #{"src"}
-  :resource-paths #{"content"}
-  :dependencies '[[javax.xml.bind/jaxb-api    "2.3.0"]
-                  [perun                      "0.4.3-SNAPSHOT" :scope "test"]
-                  [deraen/boot-sass           "0.2.1"]
-                  [deraen/boot-livereload     "0.2.1"]
-                  [danielsz/boot-autoprefixer "0.1.0"]
-                  [hiccup                 "1.0.5" :exclusions [org.clojure/clojure]]
-                  [pandeiro/boot-http     "0.8.3" :exclusions [org.clojure/clojure]]])
+ :source-paths   #{"src"}
+ :resource-paths #{"content"}
+ :dependencies '[[javax.xml.bind/jaxb-api    "2.3.0"]
+                 [perun                      "0.4.3-SNAPSHOT" :scope "test"]
+                 [deraen/boot-sass           "0.2.1"]
+                 [deraen/boot-livereload     "0.2.1"]
+                 [danielsz/boot-autoprefixer "0.1.0"]
+                 [hiccup                 "1.0.5" :exclusions [org.clojure/clojure]]
+                 [pandeiro/boot-http     "0.8.3" :exclusions [org.clojure/clojure]]])
 
 (require '[io.perun               :as perun]
          '[pandeiro.boot-http     :as  http]
@@ -16,10 +16,13 @@
          '[danielsz.autoprefixer  :refer [autoprefixer]])
 
 (deftask build []
-  (comp (sass)
+  (comp (perun/global-metadata)
+        (sass)
         (autoprefixer :files ["site.main.css", "site.main.scss"])
         (perun/markdown)
-        (perun/render :renderer 'site.core/page)))
+        (perun/render :renderer 'site.post/render)
+        (perun/collection :renderer 'site.index/render :page "index.html")
+        (perun/sitemap :filename "sitemap.xml")))
 
 (deftask dev []
   (comp (watch)
