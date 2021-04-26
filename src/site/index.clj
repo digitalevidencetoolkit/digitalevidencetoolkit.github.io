@@ -28,7 +28,7 @@
       "It aims:"]
      [:ul
       [:li {:class "lh-copy"}
-       "To raise awarness of the seriousness of the problem ;"]
+       "To raise awareness of the seriousness of the problem ;"]
       [:li {:class "lh-copy"}
        "To offer a minimum viable product highlighting the basic requirements of proper 
         evidence preservation ;"]
