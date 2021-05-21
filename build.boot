@@ -20,13 +20,14 @@
         (sass)
         (autoprefixer :files ["site.main.css", "site.main.scss"])
         (perun/markdown)
-        (perun/render :renderer 'site.post/render)
-        (perun/collection :renderer 'site.index/render :page "index.html")
-        (perun/sitemap :filename "sitemap.xml")))
+        (perun/render         :renderer      'site.post/render)
+        (perun/collection     :renderer      'site.index/render :page "index.html")
+        (perun/inject-scripts :scripts       #{"js/analytics.js"})
+        (perun/sitemap        :filename      "sitemap.xml")))
 
 (deftask dev []
   (comp (watch)
         (build)
-        (perun/inject-scripts :scripts       #{"js/livereload.js", "js/analytics.js"})
+        (perun/inject-scripts :scripts       #{"js/livereload.js"})
         (livereload           :asset-path    "public" :filter #"\.(css|html|js)$")
         (http/serve           :resource-root "public")))
