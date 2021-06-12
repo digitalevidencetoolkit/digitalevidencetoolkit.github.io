@@ -10,3 +10,20 @@ section {
 	line-height: 1.5;
     }
 }
+
+hr {
+    color: #ccc;
+}
+
+a.nodeco {
+    text-decoration: none;
+    font-weight: bold;
+
+    &:visited {
+	color: inherit;
+    }
+}
+
+.bt {
+    border-color: #ccc;
+}

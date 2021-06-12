@@ -25,6 +25,14 @@
    [:h1 {:class "f2-s f1-m f1-l tc lh-title mt0 mb5"}
     "The Digital Evidence Preservation Toolkit"]])
 
+(defn slim-header []
+  [:header
+   [:a {:href "/"
+        :class "nodeco"}
+    [:h1 {:class "f3-s f3-m f3-l tc lh-title mt0 mb4"}
+    "The Digital Evidence Preservation Toolkit"]]
+   [:hr]])
+
 (defn newsletter-embed []
   [:iframe {:scrolling "no"
             :width "100%"
@@ -40,7 +48,6 @@
 (defn footer []
   (let [funders ["https://prototypefund.de/wp-content/uploads/2016/07/logo-bmbf.svg"
                  "https://prototypefund.de/wp-content/uploads/2016/07/logo-okfn.svg"]]
-    [:footer
-     [:hr]
+    [:footer {:class "bt"}
      [:p "With the generous funding and support of"]
      (flex-row-of-pictures funders)]))
