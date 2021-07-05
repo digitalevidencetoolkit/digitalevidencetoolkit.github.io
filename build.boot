@@ -22,9 +22,9 @@
         (perun/markdown)
         (perun/render         :renderer      'site.post/render)
         (perun/collection     :renderer      'site.index/render :page "index.html")
-        (perun/rss            :site-title "The Digital Evidence Preservation Toolkit"
-                              :description ""
-                              :base-url "https://digitalevidencetoolkit.org/")
+        ;; (perun/rss            :site-title "The Digital Evidence Preservation Toolkit"
+        ;;                       :description ""
+        ;;                       :base-url "https://digitalevidencetoolkit.org/")
         (perun/atom-feed      :site-title "The Digital Evidence Preservation Toolkit"
                               :description ""
                               :base-url "https://digitalevidencetoolkit.org/")
