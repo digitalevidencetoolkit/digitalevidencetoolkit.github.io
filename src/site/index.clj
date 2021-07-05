@@ -35,13 +35,15 @@
       [:li {:class "lh-copy"}
        "To highlight different challenges and solutions fitting different organisations and fields."]]]
 
-    ;; [:section {:class "pv0 bt bb"}
-    ;;  [:h4 {:class "f3 lh-copy"}
-    ;;   "Blogs and news"]
-    ;;  [:ul {:class "items columns small-12 mb4"}
-    ;;   (for [post posts]
-    ;;     [:li
-    ;;      [:a {:href (:permalink post)} (:title post)]])]]
+    [:section {:class "pv0 bt"}
+     [:h4 {:class "f3 lh-copy"}
+      "Archives and resources"]
+     [:ul {:class "items columns small-12 mb4"}
+      (for [post posts]
+        [:section
+         [:h3 [:a {:href (:permalink post)} (:title post)]]
+         [:p (:description post)]])]]
+
     [:section {:class "bt"}
      (core/newsletter-embed)]
     [:section
