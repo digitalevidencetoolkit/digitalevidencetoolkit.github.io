@@ -41,8 +41,10 @@
      [:ul {:class "items columns small-12 mb4"}
       (for [post posts]
         [:section
-         [:h3 [:a {:href (:permalink post)} (:title post)]]
-         [:p (:description post)]])]]
+         [:h3 {:class "mb0"}
+          [:a {:href (:permalink post)} (:title post)]]
+         [:p {:class "mt0"}
+          (:description post)]])]]
 
     [:section {:class "bt"}
      (core/newsletter-embed)]
