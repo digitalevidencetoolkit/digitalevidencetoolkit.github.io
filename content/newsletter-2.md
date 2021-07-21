@@ -10,7 +10,7 @@ _A brief intro to its unclear evidentiary value and admissibility before the cou
 
 It would be difficult to explain our ambitions for the Digital Evidence Toolkit without first defining ‘digital evidence,’ a term used to describe any information stored in a digital format that is related to any future or ongoing litigation. This evidence may be stored on physical devices (such as smartphones, computers, or hard drives), or transmitted on the internet.
 
-Advocacy groups have noted that the storage and preservation of digital evidence, whether it be online or on a device, both come with their own unique set of problems – see for example [this IBA panel moderated by EyeWitness director Wendy Betts](Advocacy groups have noted that the storage and preservation of digital evidence, whether it be online or on a device, both come with their own unique set of problems – see for example this IBA panel moderated by EyeWitness director Wendy Betts.).
+Advocacy groups have noted that the storage and preservation of digital evidence, whether it be online or on a device, both come with their own unique set of problems – see for example [this IBA panel moderated by EyeWitness director Wendy Betts](https://ibanet-org.zoom.us/rec/play/3xubOfazOciZXoUvGEtxNTOiwaQ1lO4wsGrObKjms0kJOL3DmbCR0JERAlHObEMaK6GH85F7cwJf8hcH.KFL67C_8WMqCUSGa?startTime=1605715248000&&_x_zm_rtaid=uRGfAxH-TOWn_Byx9AncRA.1606221810020.4054607a6db9ce7bad94be8bf9561faf&&_x_zm_rhtaid=792).
 
 Physical devices on the one hand are subject to damage within areas of conflict or harsh environments, and even when properly cared for, devices may be seized by authorities at military checkpoints or border crossings; resulting in evidence lost.
 
