@@ -18,23 +18,31 @@
        is a difficult problem drawing on several technically-advanced fields: from the high 
        standards of the maintenance of the chain of custody to the cost of storage, the need 
        for accessibility and availability of the material years into the future, the challenges 
-       are considerable – and a lot for one organisation to take on."]
+       are considerable – and a lot for one organisation to take on."]]
 
-     [:span {:class "f3 lh-title"}
-      "The Digital Evidence Toolkit is an advocacy project bringing together scholars, experts, 
-       practitioners and activists."]
+    [:section {:class "bt"}
+     [:h5 {:class "f3 lh-copy mb0"}
+      "Our goals"]
+     [:p
+      "We aim to provide" [:b " a proof-of-concept software"] " for researchers and small teams 
+       sifting through online material. With only one click of the mouse, the material will be"
+       [:b " archived in a framework demonstrating chain of custody and stored durably"]  ". 
+       Once included in the growing database, users will be able to go back to" [:b " search 
+       through and annotate"] " the material, and to " [:b "export working copies"] " of said 
+       material for publication and dissemination."]
 
-     [:p {:class "lh-copy"}
-      "It aims:"]
-     [:ul
-      [:li {:class "lh-copy"}
-       "To raise awareness of the seriousness of the problem ;"]
-      [:li {:class "lh-copy"}
-       "To offer a minimum viable product highlighting the basic requirements of proper 
-        evidence preservation ;"]
-      [:li {:class "lh-copy"}
-       "To highlight different challenges and solutions fitting different organisations and fields."]]]
+     [:h5 {:class "f3 lh-copy mb0"}
+      "Our aims"]
+     [:p
+      "A database built thusly can be handed to a prosecutor ten years down 
+       the line, and they will be able to say with mathematical certainty:" [:b "“the material 
+       in this archive is identical and contemporary to the one saved at the time, ten years ago.”"]]
 
+     [:p
+      "We want this to be the plastic sealed bag in which evidence is deposited, and which is then 
+       kept under watch in an evidence room, where each access is tracked and reported in a log."
+      ]]
+    
     [:section {:class "pv0 bt"}
      [:h4 {:class "f3 lh-copy"}
       "Archives and resources"]

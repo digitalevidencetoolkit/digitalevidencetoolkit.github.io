@@ -3,6 +3,7 @@ title: "Newsletter #1: What is the “Digital Evidence Toolkit” and how can yo
 description: A new threat looms over international prosecutions – I'd love your help
 uuid: "fde2ac20-e857-43cd-9a09-e62ad31351d4"
 author: "Basile Simon"
+date-published: 2021-07-10
 ---
 
 # Newsletter #1: What is the “Digital Evidence Toolkit” and how can you become involved?

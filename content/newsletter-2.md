@@ -3,6 +3,7 @@ title: "Newsletter #2: Wait, digital evidence?"
 description: A brief intro to its unclear evidentiary value and admissibility before the courts
 uuid: "fad7914d-f6d0-46ed-ad1b-e31aef50548f"
 author: "Basile Simon"
+date-published: 2021-07-18
 ---
 
 # Newsletter #2: Wait, digital evidence?
