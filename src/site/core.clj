@@ -48,6 +48,6 @@
 (defn footer []
   (let [funders ["https://prototypefund.de/wp-content/uploads/2016/07/logo-bmbf.svg"
                  "https://prototypefund.de/wp-content/uploads/2016/07/logo-okfn.svg"]]
-    [:footer {:class "bt"}
+    [:footer {:class "mw6-l mw100-ns center bt"}
      [:p "With the generous funding and support of"]
      (flex-row-of-pictures funders)]))

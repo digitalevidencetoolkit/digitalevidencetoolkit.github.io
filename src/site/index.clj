@@ -5,10 +5,10 @@
 (defn render [{global-meta :meta posts :entries}]
   (hp/html5
    (core/head)
-   [:body {:class "w-90 w-80-m mw100-ns mw6-l center pv5"}
+   [:body {:class "w-90 w-80-m pv5 center"}
     (core/header)
 
-    [:section {:class "pv0 mb4"}
+    [:section {:class "mw6-l mw100-ns center mb4 pb5 bb"}
      [:p {:class "lh-copy"}
       "Every day, dedicated investigative journalists and human rights monitors scour 
        the Web in search of proof of abuse, wrongdoing, and crime. The material they 
@@ -20,8 +20,9 @@
        for accessibility and availability of the material years into the future, the challenges 
        are considerable – and a lot for one organisation to take on."]]
 
-    [:section {:class "bt"}
-     [:h5 {:class "f3 lh-copy mb0"}
+    [:section {:class "mw8-l mw100-ns center flex-auto flex flex-column flex-row-ns justify-center-ns mb4"}
+     [:div {:class "w-40-m  w-100-s mr5-m w-40-l mr5-l"}
+      [:h5 {:class "f3 lh-copy mb0"}
       "Our goals"]
      [:p
       "We aim to provide" [:b " a proof-of-concept software"] " for researchers and small teams 
@@ -29,9 +30,10 @@
        [:b " archived in a framework demonstrating chain of custody and stored durably"]  ". 
        Once included in the growing database, users will be able to go back to" [:b " search 
        through and annotate"] " the material, and to " [:b "export working copies"] " of said 
-       material for publication and dissemination."]
+       material for publication and dissemination."]]
 
-     [:h5 {:class "f3 lh-copy mb0"}
+      [:div {:class "w-40-m  w-100-s ml5-m w-40-l ml5-l"}
+       [:h5 {:class "f3 lh-copy mb0"}
       "Our aims"]
      [:p
       "A database built thusly can be handed to a prosecutor ten years down 
@@ -41,9 +43,9 @@
      [:p
       "We want this to be the plastic sealed bag in which evidence is deposited, and which is then 
        kept under watch in an evidence room, where each access is tracked and reported in a log."
-      ]]
+      ]]]
     
-    [:section {:class "pv0 bt"}
+    [:section {:class "mw6-l mw100-ns center pv0 bt"}
      [:h4 {:class "f3 lh-copy"}
       "Archives and resources"]
      [:ul {:class "items columns small-12 mb4"}
@@ -54,7 +56,7 @@
          [:p {:class "mt0"}
           (:description post)]])]]
 
-    [:section {:class "bt"}
+    [:section {:class ""}
      (core/newsletter-embed)]
     [:section
      (core/footer)]]))
