@@ -6,7 +6,7 @@ author: "Basile Simon"
 date-published: 2021-07-26
 ---
 
-_(In case you missed it last week, the previous issue of this newsletter, “Wait, digital evidence?” in which we touch on chain of custody and admissibility, [can be found here](notion://www.notion.so/%5B%3Chttps://digitalevidencetoolkit.org/newsletter-2.html%3E%5D(%3Chttps://digitalevidencetoolkit.org/newsletter-2.html%3E)))
+_(In case you missed it last week, the previous issue of this newsletter, “Wait, digital evidence?” in which we touch on chain of custody and admissibility, [can be found here](https://digitalevidencetoolkit.org/newsletter-2.html))__
 
 **It's maybe time to clarify a few things about what the Digital Evidence Preservation Toolkit is and does***, from the two original thoughts:
 
@@ -33,7 +33,7 @@ The Toolkit only addresses provenance and chain the custody from the moment of r
 
 ### Follow along
 
-The technical work is taking place [on GitHub](https://github.com/digitalevidencetoolkit) and is best followed through [the Kanban board](https://github.com/orgs/digitalevidencetoolkit/projects/2** tracking my progress in delivering a minimum viable product in the next couple of weeks.
+The technical work is taking place [on GitHub](https://github.com/digitalevidencetoolkit) and is best followed through [the Kanban board](https://github.com/orgs/digitalevidencetoolkit/projects/2) tracking my progress in delivering a minimum viable product in the next couple of weeks.
 
 If you've got technical chops and have some spare time in the coming month, please get in touch. I'm looking for reviewers, testers, TypeScript connoisseurs, and browser APIs experts.
 
