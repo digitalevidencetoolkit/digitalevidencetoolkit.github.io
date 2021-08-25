@@ -1,0 +1,155 @@
+baseURL: https://digitalevidencetoolkit.org
+languageCode: en-us
+title: The Digital Evidence Preservation Toolkit
+theme: hugo-fresh
+# Disables warnings
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  openGraph: true
+  description: An archiving and annotation tool demonstrating chain of custody in view of international prosecutions
+  navbarlogo:
+    image: logo.svg
+  single:
+    include_footer: true
+  font:
+    name: 'Roboto'
+    sizes: [400, 600, 700]
+  hero:
+    title: The Digital Evidence Preservation Toolkit
+    subtitle: An archiving and annotation tool demonstrating chain of custody in view of international prosecutions
+    # TODO
+    # buttontext: Get started
+    # buttonlink: "#"
+    # Hero image (from static/images/___)
+    image: illustrations/architecture-full.svg
+    # Footer logos (from static/images/logos/clients/___.svg)
+    # clientlogos:
+    # - systek
+    # - tribe
+    # - kromo
+    # - infinite
+    # - gutwork
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  # navbar:
+  #   - title: Features
+  #     url: /
+  #   - title: Pricing
+  #     url: /
+  #   - title: Dropdown
+  #     sublinks:
+  #       - title: Dropdown item
+  #         url: /
+  #       - title: Dropdown item
+  #         url: /
+  #       - title: Dropdown item
+  #         url: /
+  #   - title: Log in
+  #     url: /
+  #   - title: Sign up
+  #     url: /
+  #     button: true
+
+  section1:
+    title: Enter, the Toolkit
+    subtitle: 'At its core: **a ledger** with best-in-class cryptographic properties. **Immutable, replayable, durable.**'
+    tiles:
+      - title: One click to preserve
+        icon: mouse-globe
+        text: Save content through a simple browser extension. More time spent researching.
+      - title: Future-proof, authenticity proof
+        icon: laptop-cloud
+        text: Offline copies and immutable storage of their digitable signatures.
+      - title: Browse & annotate
+        icon: doc-sync
+        text: As well as export of working copies. All access is logged in the ledger.
+      - title: Lookup and prove
+        icon: plug-cloud
+        text: Demonstrate proper chain of custody and reverse-lookup material against an archive.
+
+  section2:
+    title: Notable features
+    subtitle: well, benefits
+    features:
+      - title: Flexible metadata
+        text: In addition to future-proof archives of webpages and screenshots, we're capturing some metadata about pages and asking users about their potential needs beyond the obvious (think Google Analytics tracking codes, DNS records, etc.)
+        # Icon (from /images/illustrations/icons/___.svg)
+        icon: laptop-globe
+      - title: Immutable ledger
+        text: "This metadata is preserved and the unique signatures notarised in the immutable ledger we are using. This means that once written in the database, there is no lossy change possible aside from a complete deletion. Once again: we're addressing chain of custody from the moment of record only."
+        icon: doc-sync
+      - title: Trusted timestamping
+        text: "The centralised, Amazon Web Services-run ledger provides a hybrid method of trusted timestamping as per ANSI ASC X9.95 and ISO/IEC 18014: each insertion in and revision of the ledger has a timestamp, er, stamped on it by Amazon. It's a feature, not a bug – and a highly desirable one with that."
+        icon: mobile-feed
+
+  # section3:
+  #   title: One platform
+  #   subtitle: To rule them all
+  #   image: architecture.png
+  #   buttonText: Get started
+  #   buttonLink: "#"
+
+  # section4:
+  #   title: Our Clients love us!
+  #   subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+  #   clients:
+  #     - name: Irma Walters
+  #       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #       job: Accountant
+  #       img: 1
+  #     - name: John Bradley
+  #       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #       job: Financial Analyst
+  #       img: 2
+  #     - name: Gary Blackman
+  #       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #       job: HR Manager
+  #       img: 3
+
+  section4:
+    title: Public roadmap
+    subtitle: Coming soon to the Toolkit
+    link: https://github.com/orgs/digitalevidencetoolkit/projects/3
+    items:
+      - label: Collaboration
+        description: Support several researchers contributing to the same database
+      - label: Integration with enterprise software
+        description: Support load file workflows for case managements software e.g. CaseMap, Relativity, Nuix
+      - label: Automated deployment
+        description: AWS infrastructure sets itself up in a reproducible manner
+
+  section5:
+    title: News and blog
+
+  footer:
+    # Logo (from /images/logos/___)
+    logo: logo.svg
+    socialmediatitle: Follow Us
+    socialmedia:
+      - link: https://github.com/digitalevidencetoolkit
+        icon: github
+      - link: https://twitter.com/deptoolkit
+        icon: twitter
+    bulmalogo: false
+    quicklinks:
+      column2:
+        title: 'Docs'
+        links:
+          - text: About us
+            link: /about
+          - text: Get started
+            link: https://digitalevidencetoolkit.notion.site/Getting-started-15521f4125534f4aa758a2575c27ad5c
+          - text: Technical documentation
+            link: https://digitalevidencetoolkit.notion.site/Technical-Journal-01ad0720aebc4f9c9a8036da0fd7426b
+          - text: Help and contribute
+            link: https://digitalevidencetoolkit.notion.site/How-you-can-help-and-contribute-00ab347fa0fc49fd9ed42dc982e5f344
+          - text: Roadmap
+            link: https://github.com/orgs/digitalevidencetoolkit/projects/3
+          - text: Changelog
+            link: https://github.com/digitalevidencetoolkit/deptoolkit/releases

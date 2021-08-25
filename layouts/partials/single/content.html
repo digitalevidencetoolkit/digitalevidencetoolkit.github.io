@@ -1,0 +1,26 @@
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-9">
+        <h1 class="title section-title">{{ .Title }}</h1>
+        <h5 class="subtitle is-5 is-muted">{{ .Params.Description }}</h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="columns is-centered">
+	<div class="column is-8">
+	  {{ .Content }}
+	  <hr />
+	  <button class="button is-info is-outlined">
+	    <a href="{{ .Site.BaseURL }}"><span class="icon">
+		<i class="fa fa-arrow-left"></i>
+	      </span> Home </a>
+	  </button>
+	</div>
+      </div>
+    </div>
+
+  </div>
+</section>

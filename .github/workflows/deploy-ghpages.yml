@@ -1,56 +1,30 @@
-name: "Deploy to GitHub Pages"
+name: 'Deploy to GitHub Pages'
 
 on:
   push:
-    branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [main]
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-        
-      - name: Use Node.js
-        uses: actions/setup-node@v1
         with:
-          node-version: '10.22.1'
+          submodules: true
+          fetch-depth: 0
 
-      - name: Use latest NPM
-        run: sudo npm i -g npm
-
-      - name: Install dependencies
-        run: npm install -g postcss-cli postcss autoprefixer
-
-      - uses: actions/setup-java@v1
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          java-version: '15.0.2'
-          java-package: jdk
-          architecture: x64
+          hugo-version: '0.85.0'
 
-      - uses: DeLaGuardo/setup-clojure@master
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          cli: '1.8.0'
-          boot: '2.7.2'
-          
-      - name: Show boot version
-        run: boot -V
-
-      - name: Build static content in target/
-        run: boot build target
-        
-      - name: Deploy static assets to GH Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.ghpat }}
-          BRANCH: gh-pages
-          FOLDER: target/public
-
+          github_token: ${{ secrets.ghpat }}
+          publish_dir: ./public
