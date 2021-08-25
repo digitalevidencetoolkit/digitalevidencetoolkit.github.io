@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "custom.css",
+	"sourceRoot": "/home/runner/work/digitalevidencetoolkit.github.io/digitalevidencetoolkit.github.io",
+	"sources": [
+		"stdin"
+	],
+	"sourcesContent": [
+		"$primary: #b10dc9;\n$white: #fff;\n\nh1,\nh4.headline,\nh4.headline a {\n  color: $primary !important;\n  font-weight: 700;\n}\n\n.section-primary {\n  background-color: $primary !important;\n}\n\n.button {\n  &.primary-btn {\n    background-color: $primary !important;\n    border-color: $primary !important;\n    &.raised:hover {\n      box-shadow: 0 14px 26px -12px rgba(191, 0, 255, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12),\n        0 8px 10px -5px rgba(191, 0, 255, 0.2) !important;\n    }\n  }\n}\n\n.divider {\n  background: $primary;\n}\nfooter .icon .fa {\n  color: $white !important;\n  &:hover {\n    color: #ddd !important;\n  }\n}\n\n.article {\n  padding: 1.5rem 1.5rem !important;\n}\n.headline {\n  margin-bottom: 0.5rem !important;\n\n  a:hover {\n    color: RGB(177, 13, 201, 0.8) !important;\n    text-decoration: underline;\n  }\n}\n\nbody,\nh1,\nh2,\nh3,\nh4,\np,\na,\nli,\nspan {\n  font-family: Roboto !important;\n}\n\n.navbar-brand {\n  &:hover {\n    ::after {\n      content: \"← Home\";\n      text-decoration: underline;\n    }\n  }\n}\n\n.is-underlined {\n  text-decoration: underline;\n}\n"
+	],
+	"names": [],
+	"mappings": "AAGA,AAAA,EAAE,CACF,EAAE,AAAA,SAAS,CACX,EAAE,AAAA,SAAS,CAAC,CAAC,AAAC,CACZ,KAAK,CANG,OAAO,CAMC,UAAU,CAC1B,WAAW,CAAE,GAAG,CACjB,AAED,AAAA,gBAAgB,AAAC,CACf,gBAAgB,CAXR,OAAO,CAWY,UAAU,CACtC,AAED,AACE,OADK,AACJ,YAAY,AAAC,CACZ,gBAAgB,CAhBV,OAAO,CAgBc,UAAU,CACrC,YAAY,CAjBN,OAAO,CAiBU,UAAU,CAKlC,AARH,AAII,OAJG,AACJ,YAAY,AAGV,OAAO,CAAC,KAAK,AAAC,CACb,UAAU,CAAE,CAAC,CAAC,IAAI,CAAC,IAAI,CAAE,KAAI,CAAC,oBAAuB,CAAE,CAAC,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,gBAAmB,CACvF,CAAC,CAAC,GAAG,CAAC,IAAI,CAAE,IAAG,CAAC,mBAAsB,CAAC,UAAU,CACpD,AAIL,AAAA,QAAQ,AAAC,CACP,UAAU,CA1BF,OAAO,CA2BhB,AACD,AAAA,MAAM,CAAC,KAAK,CAAC,GAAG,AAAC,CACf,KAAK,CA5BC,IAAI,CA4BI,UAAU,CAIzB,AALD,AAEE,MAFI,CAAC,KAAK,CAAC,GAAG,CAEZ,KAAK,AAAC,CACN,KAAK,CAAE,eAAe,CACvB,AAGH,AAAA,QAAQ,AAAC,CACP,OAAO,CAAE,wBAAwB,CAClC,AACD,AAAA,SAAS,AAAC,CACR,aAAa,CAAE,iBAAiB,CAMjC,AAPD,AAGE,SAHO,CAGP,CAAC,CAAC,KAAK,AAAC,CACN,KAAK,CAAE,sBAAsB,CAAC,UAAU,CACxC,eAAe,CAAE,SAAS,CAC3B,AAGH,AAAA,IAAI,CACJ,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,CACF,CAAC,CACD,CAAC,CACD,EAAE,CACF,IAAI,AAAC,CACH,WAAW,CAAE,iBAAiB,CAC/B,AAED,AAEI,aAFS,CACT,KAAK,GACH,KAAK,AAAC,CACN,OAAO,CAAE,QAAQ,CACjB,eAAe,CAAE,SAAS,CAC3B,AAIL,AAAA,cAAc,AAAC,CACb,eAAe,CAAE,SAAS,CAC3B"
+}
