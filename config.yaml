@@ -28,7 +28,7 @@ params:
     # buttontext: Get started
     # buttonlink: "#"
     # Hero image (from static/images/___)
-    image: illustrations/architecture-full.svg
+    image: illustrations/architecture-full-curves.svg
     # Footer logos (from static/images/logos/clients/___.svg)
     # clientlogos:
     # - systek
@@ -141,7 +141,7 @@ params:
       column2:
         title: 'Docs'
         links:
-          - text: About us
+          - text: Contact and About us
             link: /about
           - text: Get started
             link: https://digitalevidencetoolkit.notion.site/Getting-started-15521f4125534f4aa758a2575c27ad5c

@@ -1,4 +1,5 @@
-{{- $section1 := .Site.Params.section5 }} {{- $title := index $section1 "title" }}
+{{- $section1 := .Site.Params.section5 }} {{- $title := index $section1 "title"
+}}
 <section class="section is-medium section-feature-grey">
   <div class="container">
     <div class="title-wrapper has-text-centered">
@@ -8,9 +9,11 @@
 
     <div class="content-wrapper columns is-centered" style="padding-bottom: 0">
       <div class="column is-8">
-        {{ range .Pages.ByDate.Reverse }} {{ if ne .Title "About" }}
+        {{ range .Pages.ByDate.Reverse }} {{ if ne .Title "About and contact" }}
         <section class="article section">
-          <h4 class="title is-4 headline"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+          <h4 class="title is-4 headline">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h4>
           <time><em>{{ .Date.Format "Jan 2, 2006" }}</em></time
           ><br />
           <span>{{ .Description }}</span>

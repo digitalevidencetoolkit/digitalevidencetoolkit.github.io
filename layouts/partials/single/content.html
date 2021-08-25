@@ -10,17 +10,19 @@
 
     <div class="content">
       <div class="columns is-centered">
-	<div class="column is-8">
-	  {{ .Content }}
-	  <hr />
-	  <button class="button is-info is-outlined">
-	    <a href="{{ .Site.BaseURL }}"><span class="icon">
-		<i class="fa fa-arrow-left"></i>
-	      </span> Home </a>
-	  </button>
-	</div>
+        <div class="column is-8" style="margin-top: 2.5rem">
+          {{ .Content }}
+          <hr />
+          <button class="button is-info is-outlined">
+            <a href="{{ .Site.BaseURL }}"
+              ><span class="icon">
+                <i class="fa fa-arrow-left"></i>
+              </span>
+              Home
+            </a>
+          </button>
+        </div>
       </div>
     </div>
-
   </div>
 </section>
