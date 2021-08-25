@@ -1,7 +1,7 @@
 ---
-title: "Newsletter #4: Time(stamped), Time(lapsed)"
+title: 'Newsletter #4: Time(stamped), Time(lapsed)'
 description: Dealing with metadata and timestamping with an immutable ledger
-author: "Basile Simon"
+author: 'Basile Simon'
 date: 2021-08-12
 include_footer: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: 'About and contact'
+include_footer: true
 ---
 
 <div class="columns">
@@ -13,7 +14,7 @@ title: 'About and contact'
       Basile Simon
     </h4>
     <p>
-      Located in Berlin, Basile supports the work of investigative journalism teams and works as a data journalism with expertise in data visualisation for the web techniques.<br/>
+      Located in Berlin, Basile supports the work of investigative journalism teams and works as a data journalist with expertise in data visualisation for the web techniques.<br/>
       He co-founded <a class="is-primary" href="https://airwars.org">Airwars</a> in 2014 and worked for the BBC, Reuters, and The Times and The Sunday Times.
     </p>
     <p>
