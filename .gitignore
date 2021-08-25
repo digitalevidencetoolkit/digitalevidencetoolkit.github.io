@@ -2,3 +2,7 @@
 target/
 resources/
 public/
+themes/hugo-fresh/.circleci/
+themes/hugo-fresh/docs/
+themes/hugo-fresh/exampleSite/
+themes/hugo-fresh/static/js/
