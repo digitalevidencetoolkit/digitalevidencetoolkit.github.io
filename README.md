@@ -1,25 +1,17 @@
 # The Digital Evidence Toolkit website
 
-Built with [perun.io](https://perun.io/), a collection of Boot tasks helping the creation of static sites.
+Built with [Hugo](https://gohugo.io/), "the world’s fastest framework for building websites."
 
-## Development
+### Development
 
-(`boot` has an issue with Big Sur – you must [build from `master`](https://github.com/boot-clj/boot#install) if you're on this OS)
+[Install Hugo](https://gohugo.io/getting-started/installing), then run:
 
-To start serving the files and editing with live reload, fire up:
+```sh
+$ hugo server
+```
 
-`$ boot dev`
+### Deployment
 
-To generate all static assets into `/target`:
+A [Github Action](https://github.com/digitalevidencetoolkit/digitalevidencetoolkit.github.io/actions/runs/1165919141/workflow) looks after doing this for each push to `main`.
 
-`$ boot build target`
-
-## Development with Docker
-
-Build the Docker image to reproduce the development environment, including Java 8, Boot, and some Node dependencies:
-
-`$ docker build -t perun-serve .`
-
-Once built, the image can be used to run the environment. File sharing between the host and the container is required:
-
-`$ docker run -v <path-to-repo>:/perun -p 3000:3000 perun-serve`
+Changes are deployed to Github Pages and picked up on our custom domain, [digitalevidencetoolkit.org](https://digitalevidencetoolkit.org)
