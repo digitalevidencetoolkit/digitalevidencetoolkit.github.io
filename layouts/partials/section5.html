@@ -1,0 +1,34 @@
+{{- $section1 := .Site.Params.section5 }} {{- $title := index $section1 "title" }}
+<section class="section is-medium section-feature-grey">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 is-spaced">{{ $title }}</h2>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper columns is-centered" style="padding-bottom: 0">
+      <div class="column is-8">
+        {{ range .Pages.ByDate.Reverse }} {{ if ne .Title "About" }}
+        <section class="article section">
+          <h4 class="title is-4 headline"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+          <time><em>{{ .Date.Format "Jan 2, 2006" }}</em></time
+          ><br />
+          <span>{{ .Description }}</span>
+        </section>
+        {{ end }} {{ end }}
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <iframe
+          frameborder="0"
+          height="280"
+          scrolling="no"
+          src="https://digitalevidencetoolkit.substack.com/embed"
+          style="background-color: #fbfbfb !important"
+          width="100%"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
