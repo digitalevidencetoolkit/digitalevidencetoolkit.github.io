@@ -73,6 +73,20 @@ params:
         icon: plug-cloud
         text: Demonstrate proper chain of custody and reverse-lookup material against an archive.
 
+  audience:
+    title: Our audience
+    subtitle: The Toolkit aims to cater to the needs of
+    clients:
+      - orgtype: Non-profits
+        quote: Small teams in need of an inexpensive solution to effectively step up their archiving, with operational security in mind.
+        img: 2
+      - orgtype: Law firms
+        quote: Teams requiring tailored integration with enterprise case-management software and bespoke customer support to offer the safest archiving to their clients.
+        img: 1
+      - orgtype: Int. tribunals
+        quote: Pluridisciplinary teams looking for an add-on to their workflow delivering effective proof of chain of custody throughout the proceedings.
+        img: 3
+
   section2:
     title: Notable features
     subtitle: well, benefits
@@ -88,31 +102,7 @@ params:
         text: "The centralised, Amazon Web Services-run ledger provides a hybrid method of trusted timestamping as per ANSI ASC X9.95 and ISO/IEC 18014: each insertion in and revision of the ledger has a timestamp, er, stamped on it by Amazon. It's a feature, not a bug – and a highly desirable one with that."
         icon: mobile-feed
 
-  # section3:
-  #   title: One platform
-  #   subtitle: To rule them all
-  #   image: architecture.png
-  #   buttonText: Get started
-  #   buttonLink: "#"
-
-  # section4:
-  #   title: Our Clients love us!
-  #   subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-  #   clients:
-  #     - name: Irma Walters
-  #       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-  #       job: Accountant
-  #       img: 1
-  #     - name: John Bradley
-  #       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-  #       job: Financial Analyst
-  #       img: 2
-  #     - name: Gary Blackman
-  #       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-  #       job: HR Manager
-  #       img: 3
-
-  section4:
+  roadmap:
     title: Public roadmap
     subtitle: Coming soon to the Toolkit
     link: https://github.com/orgs/digitalevidencetoolkit/projects/3

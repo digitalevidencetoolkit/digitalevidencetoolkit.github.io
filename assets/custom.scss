@@ -75,3 +75,15 @@ span {
 .is-underlined {
   text-decoration: underline;
 }
+
+// remove blockquotes around the blockquote box in this section
+.testimonial {
+  blockquote {
+    &:after {
+      content: '';
+    }
+    &:before {
+      content: '';
+    }
+  }
+}
