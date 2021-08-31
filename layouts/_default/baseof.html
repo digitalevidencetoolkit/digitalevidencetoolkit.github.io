@@ -3,9 +3,9 @@
   <head>
     {{ partial "meta.html" . }}
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    {{ partial "css.html" . }} {{ $options := (dict "targetPath" "custom.css"
-    "outputStyle" "compressed" "enableSourceMap" true) }} {{ $style :=
-    resources.Get "custom.scss" | resources.ToCSS $options }}
+    {{ partial "css.html" . }}
+    {{ $options := (dict "targetPath" "custom.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $style := resources.Get "custom.scss" | resources.ToCSS $options }}
     <link
       rel="stylesheet"
       href="{{ $style.RelPermalink }}"
@@ -19,8 +19,8 @@
     <!-- Back To Top Button -->
     <!-- <div id="backtotop"><a href="#"></a></div> -->
 
-    {{ if .Site.Params.sidebar }} {{ partial "sidebar.html" . }} {{ end }} {{
-    partial "javascript.html" . }}
+    {{ if .Site.Params.sidebar }} {{ partial "sidebar.html" . }} {{ end }}
+    {{ partial "javascript.html" . }}
   </body>
 
   {{ partial "analytics.html" }}
