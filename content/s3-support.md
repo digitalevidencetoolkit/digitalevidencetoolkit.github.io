@@ -1,5 +1,5 @@
 ---
-title: "Support for S3-class cloud storage**
+title: "Support for S3-class cloud storage"
 description: The Toolkit now supports S3 cloud storage, a first step towards collaboration
 author: Basile Simon
 date: 2022-03-05
