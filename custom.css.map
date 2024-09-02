@@ -3,7 +3,7 @@
 	"file": "custom.css",
 	"sourceRoot": "/home/runner/work/digitalevidencetoolkit.github.io/digitalevidencetoolkit.github.io",
 	"sources": [
-		"stdin"
+		"assets/custom.scss"
 	],
 	"sourcesContent": [
 		"$primary: #b10dc9;\n$white: #fff;\n\nh1,\nh4.headline,\nh4.headline a,\na.is-primary {\n  color: $primary !important;\n  font-weight: 700;\n}\n\na.is-primary:hover {\n  text-decoration: underline;\n}\n\n.section-primary {\n  background-color: $primary !important;\n}\n\n.button {\n  &.primary-btn {\n    background-color: $primary !important;\n    border-color: $primary !important;\n    &.raised:hover {\n      box-shadow: 0 14px 26px -12px rgba(191, 0, 255, 0.42),\n        0 4px 23px 0px rgba(0, 0, 0, 0.12),\n        0 8px 10px -5px rgba(191, 0, 255, 0.2) !important;\n    }\n  }\n}\n\n.divider {\n  background: $primary;\n}\nfooter .icon .fa {\n  color: $white !important;\n  &:hover {\n    color: #ddd !important;\n  }\n}\n\n.article {\n  padding: 1.5rem 1.5rem !important;\n}\n.headline {\n  margin-bottom: 0.5rem !important;\n\n  a:hover {\n    color: RGB(177, 13, 201, 0.8) !important;\n    text-decoration: underline;\n  }\n}\n\nbody,\nh1,\nh2,\nh3,\nh4,\np,\na,\nli,\nspan {\n  font-family: Roboto !important;\n}\n\n.navbar-brand {\n  &:hover {\n    ::after {\n      content: '← Home';\n      text-decoration: underline;\n    }\n  }\n}\n\n.is-underlined {\n  text-decoration: underline;\n}\n\n// remove blockquotes around the blockquote box in this section\n.testimonial {\n  blockquote {\n    &:after {\n      content: '';\n    }\n    &:before {\n      content: '';\n    }\n  }\n}\n"
