@@ -19,7 +19,7 @@ params:
   single:
     include_footer: true
   font:
-    name: 'Roboto'
+    name: "Roboto"
     sizes: [400, 600, 700]
   hero:
     title: The Digital Evidence Preservation Toolkit
@@ -58,7 +58,7 @@ params:
 
   section1:
     title: Enter, the Toolkit
-    subtitle: 'At its core: **a ledger** with best-in-class cryptographic properties. **Immutable, replayable, durable.**'
+    subtitle: "At its core: **a ledger** with best-in-class cryptographic properties. **Immutable, replayable, durable.**"
     tiles:
       - title: One click to preserve
         icon: mouse-globe
@@ -129,16 +129,14 @@ params:
     bulmalogo: false
     quicklinks:
       column2:
-        title: 'Docs'
+        title: "Docs"
         links:
           - text: Contact and About us
             link: /about
           - text: Get started
-            link: https://digitalevidencetoolkit.notion.site/Getting-started-15521f4125534f4aa758a2575c27ad5c
+            link: /getting-started
           - text: Technical documentation
-            link: https://digitalevidencetoolkit.notion.site/Technical-Journal-01ad0720aebc4f9c9a8036da0fd7426b
-          - text: Help and contribute
-            link: https://digitalevidencetoolkit.notion.site/How-you-can-help-and-contribute-00ab347fa0fc49fd9ed42dc982e5f344
+            link: /docs
           - text: Roadmap
             link: https://github.com/orgs/digitalevidencetoolkit/projects/3
           - text: Changelog

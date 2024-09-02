@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
-    {{ partial "meta.html" . }}
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ partial "css.html" . }} {{ $options := (dict "targetPath" "custom.css"
     "outputStyle" "compressed" "enableSourceMap" true) }} {{ $style :=
@@ -20,5 +19,5 @@
     {{ partial "javascript.html" . }}
   </body>
 
-  {{ partial "analytics.html" }}
+  <!-- {{ partial "analytics.html" }} -->
 </html>
