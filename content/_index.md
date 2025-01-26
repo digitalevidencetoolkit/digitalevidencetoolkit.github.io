@@ -1,4 +1,9 @@
+---
+description: Preserve, authenticate, and present digital evidence with advanced chain-of-custody tracking and metadata verification. Seamlessly integrate our tools into your CMS to ensure data integrity, compliance, and courtroom-ready results. Designed for legal professionals, archivists, and investigators, our solutions include secure archiving, evidence logging templates, and court-ready export features. Transform your workflows today!
+---
+
 ### Preserve. Authenticate. Present.
+
 _Redefining Digital Evidence Management with Advanced Custody and Verification._
 
 ---

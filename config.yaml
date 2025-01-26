@@ -1,6 +1,6 @@
 baseURL: https://digitalevidencetoolkit.org
 languageCode: en-gb
-title: The Digital Evidence Preservation Toolkit
+title: The Digital Evidence Preservation Toolkit – Redefining Evidence Management
 author: Basile Simon
 copyright: "Copyright © 2021-25, Basile Simon"
 theme: hugo-bearblog
@@ -16,7 +16,7 @@ markup:
 
 params:
   openGraph: true
-  description: An archiving and annotation tool demonstrating chain of custody in view of international prosecutions
+  description: Preserve, authenticate, and present digital evidence with advanced chain-of-custody tracking and metadata verification. Seamlessly integrate our tools into your CMS to ensure data integrity, compliance, and courtroom-ready results. Designed for legal professionals, archivists, and investigators, our solutions include secure archiving, evidence logging templates, and court-ready export features. Transform your workflows today!
   hideMadeWithLine: true
 
 permalinks:

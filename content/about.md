@@ -1,5 +1,6 @@
 ---
 title: "About"
+description: "Background information about the Toolkit and its author(s)."
 menu: "main"
 ---
 
