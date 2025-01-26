@@ -1,6 +1,6 @@
 ---
-title: "Technical Journal"
-include_footer: true
+title: "Archiving webpages – original DEPToolkit prototype"
+date: 2021-12-31
 ---
 
 Welcome to the documentation of the Digital Evidence Preservation Toolkit, a one-click tool to archive and annotate webpages while demonstrating chain of custody throughout. The Toolkit is a proof-of-concept software for researchers and small teams sifting through online material.
@@ -11,7 +11,7 @@ A database built thusly can be handed to a prosecutor ten years down the line, a
 
 ---
 
-# **The flow from 30,000ft:**
+### **The flow from 30,000ft:**
 
 A **browser extension** is tasked with passing data from the user to the system.
 The system receives this data through HTTP requests and **records it into the ledger.
@@ -19,7 +19,7 @@ A GUI of the library** is served by the system, and this can also add data to th
 
 ---
 
-# 🤔 What is where?
+### 🤔 What is where?
 
 **The browser extension** is currently written in **plain JS** (as well as some HTML/CSS). The JS assets are bundled and moved in place by Webpack, which also provides auto-reloading of the extension in-browser.
 
@@ -31,9 +31,9 @@ All the above runs with `docker-compose`, as well as standalone `npm` scripts.
 
 ---
 
-# 🥱 So, where are we ${today}?
+### 🥱 So, where are we ${today}?
 
-## The API
+#### The API
 
 Both the browser extension and the app/API are in a functioning state, though features need to be developed in sync to be considered complete.
 
@@ -114,7 +114,7 @@ A Bundle is a list of files, which can only be of some kinds. At the back of our
 
 The QLDB logic can be found under the `QLDB.*` namespace.
 
-## The UI
+### The UI
 
 The webapp uses [SvelteKit](https://kit.svelte.dev), a JS framework. It implements two notables routes – the two main use stories:
 
@@ -129,9 +129,9 @@ The webapp uses [SvelteKit](https://kit.svelte.dev), a JS framework. It implemen
 
 ---
 
-# Miscellaneous
+### Miscellaneous
 
-### On uniqueness
+#### On uniqueness
 
 Each record in our database contains a list of files that make it up (as of Aug 10th: a screenshot, its thumbnail, and a one-file HTML archive). Each is represented by its _kind_ and its hash (sha256).
 
@@ -141,7 +141,7 @@ The ID of the record is the hash of the concatenated hashes of its files:
 
 With self-identifiable data, it is possible to associate files to their ledger entries, since the ID can be computed from the files.
 
-### On ledgers
+#### On ledgers
 
 "A non ledger database is table-centric. A ledger database is log-centric. **The log is the database.**" ([Ivan Moto](https://ivan.mw/2019-11-24/what-is-a-ledger-database))
 
