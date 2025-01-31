@@ -1,6 +1,6 @@
 baseURL: https://digitalevidencetoolkit.org
 languageCode: en-gb
-title: The Digital Evidence Preservation Toolkit – Redefining Evidence Management
+title: The Digital Evidence Preservation Toolkit
 author: Basile Simon
 copyright: "Copyright © 2021-25, Basile Simon"
 theme: hugo-bearblog
