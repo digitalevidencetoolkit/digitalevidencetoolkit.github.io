@@ -22,7 +22,7 @@ He co-founded [Airwars](https://airwars.org) in 2014 and worked for the BBC, Reu
 ### Contributors
 
 Thank you to everyone who [contributed code](https://github.com/digitalevidencetoolkit/deptoolkit/graphs/contributors) to the original prototype of the Toolkit.  
-Architecture and workflow graphics by [La Loma](https://laloma.info). Newsletter copywriting by [Patrick Harvey](https://cathodes.net/).
+Architecture and workflow graphics by [La Loma](https://laloma.info). Newsletter copywriting in 2022 by Patrick Harvey.
 
 ---
 
