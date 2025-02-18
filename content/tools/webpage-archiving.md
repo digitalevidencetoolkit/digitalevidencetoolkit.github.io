@@ -5,7 +5,7 @@ date: 2024-06-01
 
 The Digital Evidence Preservation Toolkit (DEPT) offers a seamless way to capture and authenticate web content while ensuring a verifiable chain of custody. Our one-click browser extension allows you to archive webpages with cryptographic proof, making them admissible in legal, journalistic, and research contexts.
 
-Every saved webpage is stored alongside metadata, DNS records, and a tamper-proof ledger entry, ensuring long-term integrity. Whether you’re investigating misinformation, documenting critical online evidence, or preserving web pages for compliance, our solution guarantees authenticity you can trust.
+Every saved webpage is stored alongside metadata, DNS records, in tamper-evident data structures, ensuring long-term integrity. Whether you’re investigating misinformation, documenting critical online evidence, or preserving web pages for compliance, our solution guarantees authenticity you can trust.
 
 ![Untitled](/images/architecture.png)
 

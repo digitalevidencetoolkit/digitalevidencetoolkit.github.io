@@ -8,7 +8,7 @@ The Toolkit started from a funded software grant, which enabled its main author,
 
 Presently based in Berlin, Basile is a multi-disciplinary researcher bridging between engineering, law, and journalism in promoting accountability for causing harm to civilians.
 
-As a fellow at Stanford Electrical Engineering, he is part of the [Starling Lab for Data Integrity](https://starlinglab.org) (Stanford/USC), and is a resident with the European Center for Constitutional and Human Rights (ECCHR) in the cross-NGO investigative group [Forensis](https://investigative-commons.org/).  
+As a fellow at Stanford Electrical Engineering, he is part of the [Starling Lab for Data Integrity](https://starlinglab.org) (Stanford/USC), and is a resident with the European Center for Constitutional and Human Rights (ECCHR) in the cross-NGO investigative group [Investigative Commons](https://investigative-commons.org/).  
 He co-founded [Airwars](https://airwars.org) in 2014 and worked for the BBC, Reuters, and The Times and The Sunday Times.
 
 ---

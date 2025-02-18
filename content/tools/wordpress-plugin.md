@@ -3,7 +3,9 @@ title: "Turn WordPress into a Powerful Evidence Management Platform"
 date: 2025-01-01
 ---
 
-The Digital Evidence Preservation Toolkit (DEPT) WordPress Plugin transforms WordPress into a secure, verifiable evidence management system, allowing teams to capture, authenticate, and manage digital content with built-in chain-of-custody tracking and court-ready exports. Whether you're an investigative journalist, a legal professional, or a compliance officer, our plugin ensures that every piece of digital evidence is verifiable and tamper-proof.
+The Digital Evidence Preservation Toolkit (DEPT) WordPress Plugin transforms WordPress into a secure, verifiable evidence management system, allowing teams to capture, authenticate, and manage digital content with built-in chain-of-custody tracking and court-ready exports.
+
+Whether you’re an investigative journalist, a legal professional, or a compliance officer, our plugin ensures that every piece of digital evidence is verifiable and tamper-proof.
 
 ---
 

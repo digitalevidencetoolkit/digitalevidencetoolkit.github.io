@@ -1,5 +1,6 @@
 ---
 title: "Getting Started"
+date: 2022-01-01
 include_footer: true
 ---
 
