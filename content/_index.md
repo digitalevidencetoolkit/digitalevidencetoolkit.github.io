@@ -23,15 +23,15 @@ We integrate advanced chain-of-custody tracking and OSI verification workflows i
 ### **Powerful, Usable Tools That You Already Work with**
 
 **WordPress Plugin**: Make Wordpress a stronger evidence-management platform for your team. Include metadata analysis, Content Credentials presentation, chain of custody tracking, and court-ready exports.  
-[→ Read more](./tools/wordpress-plugin.md)
+[→ Read more](./tools/wordpress-plugin)
 
 **Web Archiving Solution**: Securely capture and preserve web content with our easy-to-use browser extension. Automatically store web pages, metadata, and DNS records in a cryptographically verifiable, tamper-evident data structures. Ideal for legal discovery, journalistic investigations, and compliance needs.  
-[→ Read more](./tools/webpage-archiving.md)
+[→ Read more](./tools/webpage-archiving)
 
 **Customizable CMS Integrations**: Expand your workflows with integrations into popular CMS platforms like Strapi, Notion, and Uwazi.
 
 **Coming soon: Microsoft Relativity Integration**: Seamlessly integrate DEPT’s features into Relativity for evidence validation, metadata analysis, secure archiving, and chain-of-custody tracking.  
-[→ Read more](./tools/microsoft-relativity.md)
+[→ Read more](./tools/microsoft-relativity)
 
 ---
 
