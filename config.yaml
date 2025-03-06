@@ -23,3 +23,8 @@ params:
 
 permalinks:
   news: "/news/:slug"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
