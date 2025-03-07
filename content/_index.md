@@ -1,8 +1,8 @@
 ---
-description: Preserve, authenticate, and present digital evidence with advanced chain-of-custody tracking and metadata verification. Seamlessly integrate our tools into your CMS to ensure data integrity, compliance, and courtroom-ready results. Designed for legal professionals, archivists, and investigators, our solutions include secure archiving, evidence logging templates, and court-ready export features. Transform your workflows today!
+description: Preserve, authenticate and present digital evidence with advanced chain-of-custody tracking. Ensure data integrity and courtroom-ready results for legal professionals, archivists, and investigators.
 ---
 
-### 〰️ Preserve 〰️ Authenticate 〰️ Annotate 〰️ Present 〰️
+# 〰️ Preserve 〰️ Authenticate 〰️ Annotate 〰️ Present 〰️
 
 _Redefining Digital Evidence Management with Advanced Custody and Verification._
 
@@ -10,7 +10,7 @@ _Redefining Digital Evidence Management with Advanced Custody and Verification._
 
 We integrate advanced chain-of-custody tracking and OSI verification workflows into your Content Management Systems (CMS). Our solutions empower legal professionals, archivists, and investigators with tools to ensure data integrity and compliance.
 
-**→ Our objective: courtroom-ready results.**
+## **→ Our objective: courtroom-ready results.**
 
 - **Chain of Custody Tools**: Tamper-evident tracking of evidence through its lifecycle.
 - **Metadata Verification**: Automated analysis to validate authenticity and provenance.
@@ -20,18 +20,26 @@ We integrate advanced chain-of-custody tracking and OSI verification workflows i
 
 ---
 
-### **Powerful, Usable Tools That You Already Work with**
+# **Powerful, Usable Tools That You Already Work with**
 
-**WordPress Plugin**: Make Wordpress a stronger evidence-management platform for your team. Include metadata analysis, Content Credentials presentation, chain of custody tracking, and court-ready exports.  
-[→ Read more](./tools/wordpress-plugin)
+#### **WordPress Plugin**
 
-**Web Archiving Solution**: Securely capture and preserve web content with our easy-to-use browser extension. Automatically store web pages, metadata, and DNS records in a cryptographically verifiable, tamper-evident data structures. Ideal for legal discovery, journalistic investigations, and compliance needs.  
-[→ Read more](./tools/webpage-archiving)
+<p class="p-0">Make Wordpress a stronger evidence-management platform for your team. Include metadata analysis, Content Credentials presentation, chain of custody tracking, and court-ready exports. <br/>
+<a href="./tools/wordpress-plugin">→ Read more</a></p>
 
-**Customizable CMS Integrations**: Expand your workflows with integrations into popular CMS platforms like Strapi, Notion, and Uwazi.
+#### **Web Archiving Solution**:
 
-**Coming soon: Microsoft Relativity Integration**: Seamlessly integrate DEPT’s features into Relativity for evidence validation, metadata analysis, secure archiving, and chain-of-custody tracking.  
-[→ Read more](./tools/microsoft-relativity)
+<p class="p-0">Securely capture and preserve web content with our easy-to-use browser extension. Automatically store web pages, metadata, and DNS records in a cryptographically verifiable, tamper-evident data structures. Ideal for legal discovery, journalistic investigations, and compliance needs. <br/>
+<a href="./tools/webpage-archiving">→ Read more</a></p>
+
+#### **Customizable CMS Integrations**:
+
+<p class="p-0">Expand your workflows with integrations into popular CMS platforms like Strapi, Notion, and Uwazi.</p>
+
+#### **Coming soon: Microsoft Relativity Integration**:
+
+<p class="p-0">Seamlessly integrate DEPT’s features into Relativity for evidence validation, metadata analysis, secure archiving, and chain-of-custody tracking. <br/>
+<a href="./tools/microsoft-relativity">→ Read more</a></p>
 
 ---
 

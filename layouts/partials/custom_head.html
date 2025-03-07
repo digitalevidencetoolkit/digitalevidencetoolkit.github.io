@@ -1,3 +1,22 @@
 <script defer src=https://static.cloudflareinsights.com/beacon.min.js data-cf-beacon='{"token": "6f4bf4fdd21e4cbb9daf17f573879d53"}'></script>
 <script data-goatcounter="https://deptoolkit.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+
+<script type="application/ld+json">
+        {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "{{ .Site.Title }}",
+                "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "{{ .Site.Title }}"
+                },
+                "serviceType": "Digital Evidence Management",
+                "audience": {
+                  "@type": "Audience",
+                  "audienceType": "Legal Professionals, Archivists, Investigators"
+                },
+                "keywords": "digital evidence, chain-of-custody, evidence management, legal technology"
+              }
+</script>
