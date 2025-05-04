@@ -20,11 +20,20 @@ params:
   hideMadeWithLine: true
   meta:
     favicon: true
+  author: Basile Simon
 
 permalinks:
   news: "/news/:slug"
 
 outputs:
   home:
-    - "HTML"
-    - "RSS"
+    - html
+  news:
+    - html
+    - feed
+outputFormats:
+  feed:
+    baseName: index
+    mediaType: application/rss+xml
+    isPlainText: false
+    isHTML: false
