@@ -12,7 +12,7 @@ First, I’m delighted to finally announce I’m now Director of Special Project
 
 > The Starling Lab is an academic research lab innovating with the latest cryptographic methods and decentralized web protocols to meet the technical and ethical challenges of establishing trust in our most sensitive digital records.
 
-![] (https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff440a8b4-3380-4f2c-a2ae-c8dfe1f41534_1002x533.png)
+![](/images/starling-logo.webp)
 
 > Starling uses open-source tools, best practices, and case studies to securely capture, store and verify digital content. With applications across news media, historical preservation and legal accountability, the potential use cases for the Starling Framework are numerous.
 
