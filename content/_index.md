@@ -2,15 +2,14 @@
 description: Preserve, authenticate and present digital evidence with advanced chain-of-custody tracking. Ensure data integrity and courtroom-ready results for legal professionals, archivists, and investigators.
 ---
 
-# 〰️ Preserve 〰️ Authenticate 〰️ Annotate 〰️ Present 〰️
-
-_Redefining Digital Evidence Management with Advanced Custody and Verification._
+_Redefining Digital Evidence Management with Advanced Custody and Verification._  
+_〰️ Preserve 〰️ Authenticate 〰️ Annotate 〰️ Present 〰️_
 
 ---
 
 We integrate advanced chain-of-custody tracking and OSI verification workflows into your Content Management Systems (CMS). Our solutions empower legal professionals, archivists, and investigators with tools to ensure data integrity and compliance.
 
-## **→ Our objective: courtroom-ready results.**
+#### **→ Our objective: courtroom-ready results.**
 
 - **Chain of Custody Tools**: Tamper-evident tracking of evidence through its lifecycle.
 - **Metadata Verification**: Automated analysis to validate authenticity and provenance.
@@ -20,7 +19,7 @@ We integrate advanced chain-of-custody tracking and OSI verification workflows i
 
 ---
 
-# **Powerful, Usable Tools That You Already Work with**
+<h1 style="margin-bottom: 0; margin-top: 2rem;">Powerful, Usable Tools That You Already Work with</h1>
 
 #### **WordPress Plugin**
 
