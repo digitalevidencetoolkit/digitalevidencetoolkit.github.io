@@ -3,6 +3,8 @@ title: "Original DEPToolkit prototype"
 date: 2021-12-31
 ---
 
+> **📚 Historical Documentation:** This page documents the original DEPToolkit prototype. Please note that AWS QLDB, which was used in this implementation, has been deprecated and will reach end of support on July 31, 2025. For current solutions, see our [web archiving tools](/tools/webpage-archiving).
+
 Welcome to the documentation of the Digital Evidence Preservation Toolkit, a one-click tool to archive and annotate webpages while demonstrating chain of custody throughout. The Toolkit is a proof-of-concept software for researchers and small teams sifting through online material.
 
 With only one click of the mouse, the material will be **archived in a framework demonstrating chain of custody** and **stored durably**. Once included in the growing database, users will be able to **go back to search through** and **annotate the material**, and to **export working copies** of said material for publication and dissemination.

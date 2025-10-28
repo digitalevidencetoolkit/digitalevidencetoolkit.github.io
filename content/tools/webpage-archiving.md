@@ -3,6 +3,8 @@ title: "Archive Webpages with Proof of Integrity"
 date: 2024-06-01
 ---
 
+> **⚠️ Important Notice:** AWS QLDB, one of the storage backends mentioned in this documentation, will reach end of support on July 31, 2025. We recommend using alternative immutable storage solutions. For more information, see [AWS documentation](https://docs.aws.amazon.com/qldb/latest/developerguide/document-history.html).
+
 The Digital Evidence Preservation Toolkit (DEPT) offers a seamless way to capture and authenticate web content while ensuring a verifiable chain of custody. Our one-click browser extension allows you to archive webpages with cryptographic proof, making them admissible in legal, journalistic, and research contexts.
 
 Every saved webpage is stored alongside metadata, DNS records, in tamper-evident data structures, ensuring long-term integrity. Whether you’re investigating misinformation, documenting critical online evidence, or preserving web pages for compliance, our solution guarantees authenticity you can trust.
