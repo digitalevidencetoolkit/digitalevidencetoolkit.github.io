@@ -4,7 +4,9 @@ date: 2022-01-01
 include_footer: true
 ---
 
-## _“It's not you – it's me”_
+> **⚠️ Deprecation Warning:** This guide references AWS QLDB, which will reach end of support on July 31, 2025. AWS is no longer accepting new QLDB users. Please contact us at hi@digitalevidencetoolkit.org for updated setup instructions using alternative immutable storage solutions.
+
+## _"It's not you – it's me"_
 
 If the instructions in this guide feel a bit much, it's likely because the Toolkit is still an alpha-version software which assumes a certain technical knowledge. There are technical solutions to simplifying this setup, but these were not prioritised.
 
