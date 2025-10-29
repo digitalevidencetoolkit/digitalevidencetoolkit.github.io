@@ -1,6 +1,8 @@
 ---
 title: "Original DEPToolkit prototype"
 date: 2021-12-31
+description: "One-click browser tool to archive and annotate webpages with chain-of-custody documentation. Store evidence in tamper-proof ledgers with cryptographic verification. Perfect for researchers and small teams."
+tags: ["prototype", "browser-extension", "qldb", "aws", "chain-of-custody"]
 ---
 
 Welcome to the documentation of the Digital Evidence Preservation Toolkit, a one-click tool to archive and annotate webpages while demonstrating chain of custody throughout. The Toolkit is a proof-of-concept software for researchers and small teams sifting through online material.

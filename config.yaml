@@ -22,6 +22,25 @@ params:
     favicon: true
   author: Basile Simon
 
+  # Social media handles for Open Graph and schema.org
+  twitter: "basilesimon"
+  mastodon: "https://vis.social/@basilesimon"
+  github: "https://github.com/digitalevidencetoolkit"
+
+  # Default image for social sharing (1200x630 optimal)
+  defaultImage: "/images/og-default.png"
+  images: ["/images/og-default.png"]
+
+  # Licensing and attribution for AI crawlers
+  license: "https://creativecommons.org/licenses/by/4.0/"
+  licenseName: "CC BY 4.0"
+  copyrightHolder: "Basile Simon"
+  copyrightYear: "2021-2025"
+
+  # Organization details for schema.org
+  organizationName: "Digital Evidence Toolkit"
+  organizationType: "Project"
+
 permalinks:
   news: "/news/:slug"
 

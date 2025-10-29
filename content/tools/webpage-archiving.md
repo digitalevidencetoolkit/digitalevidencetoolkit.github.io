@@ -1,6 +1,8 @@
 ---
 title: "Archive Webpages with Proof of Integrity"
 date: 2024-06-01
+description: "One-click browser extension for archiving webpages with cryptographic proof and tamper-evident storage. Perfect for legal research, journalism, and compliance. Generate court-ready digital evidence records."
+tags: ["web-archiving", "browser-extension", "evidence-preservation", "cryptographic-proof"]
 ---
 
 The Digital Evidence Preservation Toolkit (DEPT) offers a seamless way to capture and authenticate web content while ensuring a verifiable chain of custody. Our one-click browser extension allows you to archive webpages with cryptographic proof, making them admissible in legal, journalistic, and research contexts.

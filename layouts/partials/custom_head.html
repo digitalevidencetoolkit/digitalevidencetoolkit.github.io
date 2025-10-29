@@ -1,23 +1,210 @@
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
 
+<!-- RSS Feed Discovery -->
+{{ with .OutputFormats.Get "rss" }}
+    {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
+
+<!-- Enhanced Open Graph Tags -->
+{{ $image := "" }}
+{{ if .Params.image }}
+  {{ $image = printf "%s%s" .Site.BaseURL .Params.image }}
+{{ else if .Site.Params.defaultImage }}
+  {{ $image = printf "%s%s" .Site.BaseURL .Site.Params.defaultImage }}
+{{ end }}
+
+{{ if $image }}
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{{ end }}
+
+<!-- Enhanced Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image">
+{{ with .Site.Params.twitter }}
+<meta name="twitter:site" content="@{{ . }}">
+<meta name="twitter:creator" content="@{{ . }}">
+{{ end }}
+{{ if $image }}
+<meta name="twitter:image" content="{{ $image }}">
+{{ end }}
+
+<!-- Additional SEO Meta Tags -->
+<meta name="author" content="{{ .Site.Params.author }}">
+<meta name="robots" content="max-image-preview:large">
+
+<!-- Enhanced JSON-LD Structured Data -->
+<script type="application/ld+json">
+{{ if eq .Section "news" }}
+  {{- /* News/Blog Post Page */ -}}
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ .Title }},
+    "url": {{ .Permalink }},
+    "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" }},
+    "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }},
+    "description": {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }},
+    {{ if $image }}"image": {
+      "@type": "ImageObject",
+      "url": {{ $image }},
+      "width": 1200,
+      "height": 630
+    },{{ end }}
+    {{ if .Params.tags }}"keywords": {{ delimit .Params.tags ", " }},{{ end }}
+    "wordCount": {{ .WordCount }},
+    "author": {
+      "@type": "Person",
+      "@id": "{{ .Site.BaseURL }}#person",
+      "name": {{ .Site.Params.author }},
+      "url": {{ .Site.BaseURL }},
+      "jobTitle": "Research Scholar",
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Starling Lab for Data Integrity",
+          "url": "https://starlinglab.org/",
+          "parentOrganization": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Stanford University",
+              "url": "https://www.stanford.edu/"
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "University of Southern California",
+              "url": "https://www.usc.edu/"
+            }
+          ]
+        }
+      ],
+      "sameAs": [
+        "{{ .Site.Params.mastodon }}",
+        "{{ .Site.Params.github }}",
+        "https://twitter.com/{{ .Site.Params.twitter }}"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ .Site.Params.organizationName }},
+      "url": {{ .Site.BaseURL }}
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ .Permalink }}
+    },
+    "inLanguage": "{{ .Site.LanguageCode }}",
+    "copyrightHolder": {
+      "@type": "Person",
+      "name": {{ .Site.Params.copyrightHolder }}
+    },
+    "copyrightYear": {{ .Date.Format "2006" }},
+    "license": {{ .Site.Params.license }}
+  }
+{{ else if eq .Section "tools" }}
+  {{- /* Tool/Software Page */ -}}
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": {{ .Title }},
+    "url": {{ .Permalink }},
+    "description": {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }},
+    "applicationCategory": "Digital Evidence Management",
+    "operatingSystem": "Cross-platform",
+    {{ if $image }}"image": {{ $image }},{{ end }}
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "@id": "{{ .Site.BaseURL }}#person",
+      "name": {{ .Site.Params.author }}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ .Site.Params.organizationName }},
+      "url": {{ .Site.BaseURL }}
+    },
+    "license": {{ .Site.Params.license }},
+    "keywords": "digital evidence, chain-of-custody, evidence preservation, {{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}"
+  }
+{{ else if .IsHome }}
+  {{- /* Homepage - Organization Schema */ -}}
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "{{ .Site.BaseURL }}#organization",
+    "name": {{ .Site.Title }},
+    "url": {{ .Site.BaseURL }},
+    "description": {{ .Site.Params.description }},
+    "founder": {
+      "@type": "Person",
+      "@id": "{{ .Site.BaseURL }}#person",
+      "name": {{ .Site.Params.author }},
+      "url": {{ .Site.BaseURL }},
+      "jobTitle": "Research Scholar",
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Starling Lab for Data Integrity",
+          "url": "https://starlinglab.org/"
+        }
+      ],
+      "sameAs": [
+        "{{ .Site.Params.mastodon }}",
+        "{{ .Site.Params.github }}",
+        "https://twitter.com/{{ .Site.Params.twitter }}"
+      ]
+    },
+    "knowsAbout": [
+      "Digital Evidence Preservation",
+      "Chain of Custody Tracking",
+      "Evidence Authentication",
+      "Cryptographic Provenance",
+      "Legal Technology",
+      "Digital Archiving",
+      "Data Integrity",
+      "Forensic Documentation"
+    ],
+    "sameAs": [
+      "{{ .Site.Params.github }}"
+    ]
+  }
+{{ else }}
+  {{- /* Generic Page */ -}}
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": {{ .Title }},
+    "url": {{ .Permalink }},
+    "description": {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }},
+    {{ if $image }}"image": {{ $image }},{{ end }}
+    "inLanguage": "{{ .Site.LanguageCode }}",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": {{ .Site.Title }},
+      "url": {{ .Site.BaseURL }}
+    },
+    "author": {
+      "@type": "Person",
+      "@id": "{{ .Site.BaseURL }}#person",
+      "name": {{ .Site.Params.author }}
+    },
+    "copyrightHolder": {
+      "@type": "Person",
+      "name": {{ .Site.Params.copyrightHolder }}
+    },
+    "license": {{ .Site.Params.license }}
+  }
+{{ end }}
+</script>
+
+<!-- Cloudflare Web Analytics -->
 <script defer src=https://static.cloudflareinsights.com/beacon.min.js data-cf-beacon='{"token": "6f4bf4fdd21e4cbb9daf17f573879d53"}'></script>
+
+<!-- GoatCounter Web Analytics -->
 <script data-goatcounter="https://deptoolkit.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-
-<script type="application/ld+json">
-        {
-                "@context": "https://schema.org",
-                "@type": "Service",
-                "name": "{{ .Site.Title }}",
-                "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "{{ .Site.Title }}"
-                },
-                "serviceType": "Digital Evidence Management",
-                "audience": {
-                  "@type": "Audience",
-                  "audienceType": "Legal Professionals, Archivists, Investigators"
-                },
-                "keywords": "digital evidence, chain-of-custody, evidence management, legal technology"
-              }
-</script>
