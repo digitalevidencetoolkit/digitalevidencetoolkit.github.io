@@ -1,6 +1,8 @@
 ---
 title: "Archive Webpages with Proof of Integrity"
 date: 2024-06-01
+description: "One-click browser extension for archiving webpages with cryptographic proof and tamper-evident storage. Perfect for legal research, journalism, and compliance. Generate court-ready digital evidence records."
+tags: ["web-archiving", "browser-extension", "evidence-preservation", "cryptographic-proof"]
 ---
 
 > **⚠️ Important Notice:** AWS QLDB, one of the storage backends mentioned in this documentation, will reach end of support on July 31, 2025. We recommend using alternative immutable storage solutions. For more information, see [AWS documentation](https://docs.aws.amazon.com/qldb/latest/developerguide/document-history.html).

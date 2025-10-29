@@ -1,6 +1,8 @@
 ---
 title: "Original DEPToolkit prototype"
 date: 2021-12-31
+description: "One-click browser tool to archive and annotate webpages with chain-of-custody documentation. Store evidence in tamper-proof ledgers with cryptographic verification. Perfect for researchers and small teams."
+tags: ["prototype", "browser-extension", "qldb", "aws", "chain-of-custody"]
 ---
 
 > **📚 Historical Documentation:** This page documents the original DEPToolkit prototype. Please note that AWS QLDB, which was used in this implementation, has been deprecated and will reach end of support on July 31, 2025. For current solutions, see our [web archiving tools](/tools/webpage-archiving).

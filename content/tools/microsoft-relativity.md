@@ -1,6 +1,8 @@
 ---
 title: "Coming Soon: Digital Evidence Toolkit x Microsoft Relativity"
 date: 2025-01-01
+description: "Integrate Digital Evidence Toolkit with Microsoft Relativity for seamless eDiscovery, metadata validation, and chain-of-custody tracking in legal workflows. Enhance digital forensics and compliance."
+tags: ["microsoft-relativity", "ediscovery", "legal-tech", "integration"]
 ---
 
 Seamlessly integrate Digital Evidence Preservation Toolkit (DEPT) into Microsoft Relativity, bringing powerful evidence validation, metadata analysis, secure archiving, and chain-of-custody tracking directly into your legal workflows.

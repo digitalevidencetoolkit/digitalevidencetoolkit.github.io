@@ -1,6 +1,8 @@
 ---
 title: "Turn WordPress into a Powerful Evidence Management Platform"
 date: 2025-01-01
+description: "Transform WordPress into a secure evidence management system with chain-of-custody tracking, Content Credentials integration, and court-ready exports. Perfect for legal professionals and investigative journalists."
+tags: ["wordpress", "evidence-management", "chain-of-custody", "c2pa", "crdt"]
 ---
 
 The Digital Evidence Preservation Toolkit (DEPT) WordPress Plugin transforms WordPress into a secure, verifiable evidence management system, allowing teams to capture, authenticate, and manage digital content with built-in chain-of-custody tracking and court-ready exports.
