@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Crdt on The Digital Evidence Preservation Toolkit</title><link>https://digitalevidencetoolkit.org/tags/crdt</link><author>Basile Simon</author><description>Preserve, authenticate and present digital evidence with advanced chain-of-custody tracking. Ensure data integrity and courtroom-ready results for legal professionals, archivists, and investigators.</description><generator>Hugo 0.133.0</generator><language>en-gb</language><copyright>Copyright 2021-2025 Basile Simon. Licensed under CC BY 4.0.</copyright><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://digitalevidencetoolkit.org/tags/crdt/index.xml" rel="self" type="application/rss+xml"/><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license><item><title>Turn WordPress into a Powerful Evidence Management Platform</title><link>https://digitalevidencetoolkit.org/tools/wordpress-plugin</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://digitalevidencetoolkit.org/tools/wordpress-plugin/</guid><description>Transform WordPress into a secure evidence management system with chain-of-custody tracking, Content Credentials integration, and court-ready exports. Perfect for legal professionals and investigative journalists.</description><content:encoded><![CDATA[<p>The Digital Evidence Preservation Toolkit (DEPT) WordPress Plugin transforms WordPress into a secure, verifiable evidence management system, allowing teams to capture, authenticate, and manage digital content with built-in chain-of-custody tracking and court-ready exports.</p>
+<p>Whether you’re an investigative journalist, a legal professional, or a compliance officer, our plugin ensures that every piece of digital evidence is verifiable and tamper-proof.</p>
+<hr>
+<h4 id="key-features">Key Features:</h4>
+<ul>
+<li><strong>✅ Metadata Analysis</strong> – Automatically extract, verify, and log key metadata for every uploaded file.</li>
+<li><strong>✅ Content Credentials Integration</strong> – Display cryptographic proof of authenticity and authorship using Content Credentials technology.</li>
+<li><strong>✅ Chain of Custody Tracking</strong> – Ensure secure, tamper-proof documentation of every change, action, and transfer.</li>
+<li><strong>✅ Court-Ready Exports</strong> – Generate reports in legally admissible formats with a verifiable audit trail.</li>
+<li><strong>✅ Seamless WordPress Integration</strong> – Works with existing media libraries, post types, and workflows.</li>
+<li><strong>✅ Conflict-Free Collaboration</strong> – Multiple team members can work simultaneously without data loss or conflicts.</li>
+</ul>
+<hr>
+<h3 id="how-it-works">How It Works</h3>
+<p>Built with PHP and TypeScript, the DEPT WordPress Plugin integrates with your WordPress CMS and enables automatic tracking and verification of all content changes.</p>
+<p>Using SHA-256 and CID hashing as well as a tamper-evident, append-only immutable database, each modification&rsquo;s provenance is recorded and tracked. The goal: to make your diligent research auditable and verifiable.</p>
+<p>Through their familiar Wordpress user interface, users can annotate, track revisions, and generate court-admissible reports with full chain-of-custody documentation.</p>
+<p>For multimedia and enhanced proof of authorship, the plugin incorporates Content Credentials (C2PA), ensuring that all media includes secure, verifiable identity markers.</p>
+<p>The plugin uses Conflict-free Replicated Data Types (CRDT) to handle conflicts between revisions, caused by several authors. Every edit is captured as a cryptographically signed operation with unique identifiers and logical timestamps. This enables:</p>
+<ul>
+<li>A complete audit trail – Every edit is individually tracked and verifiable;</li>
+<li>Automatic conflict resolution – Changes from multiple editors merge without conflicts;</li>
+<li>Bandwidth efficiency – Only the minimal necessary data is transmitted during synchronization.</li>
+</ul>
+<h4 id="high-level-architecture">High Level Architecture</h4>
+<p>The plugin&rsquo;s architecture places content provenance and legal verification at the forefront:</p>
+<ol>
+<li>Each edit operation is individually signed before leaving the WordPress site;</li>
+<li>Operations are stored in a tamper-evident sequence;</li>
+<li>Operations synchronize with our secure verification service;</li>
+<li>Merkle tree verification ensures that all operations remain unaltered;</li>
+<li>Cryptographic receipts provide court-admissible proof of content authenticity.</li>
+</ol>
+<p><img src="/images/wordpress-plugin-diagram.png" alt=""></p>
+<hr>
+<p><strong>Access the WordPress plugin and stay informed</strong></p>
+<p>Reach out to <code>&lt;hi@digitalevidencetoolkit.org&gt;</code> or subscribe to our newsletter:</p>
+<iframe src="https://digitalevidencetoolkit.substack.com/embed" width="100%" height="320" style="border:0px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+]]></content:encoded><category>wordpress</category><category>evidence-management</category><category>chain-of-custody</category><category>c2pa</category><category>crdt</category><dc:description>Transform WordPress into a secure evidence management system with chain-of-custody tracking, Content Credentials integration, and court-ready exports. Perfect for legal professionals and investigative journalists.</dc:description><dc:date>2025-01-01T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license></item></channel></rss>

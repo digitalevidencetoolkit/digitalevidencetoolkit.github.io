@@ -1,7 +1,261 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on The Digital Evidence Preservation Toolkit</title><link>https://digitalevidencetoolkit.org/tools/?campaign=rss</link><author>Basile Simon</author><description>Recent content in Tools on The Digital Evidence Preservation Toolkit</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://digitalevidencetoolkit.org/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Coming Soon: Digital Evidence Toolkit x Microsoft Relativity</title><link>https://digitalevidencetoolkit.org/tools/microsoft-relativity/?campaign=rss</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://digitalevidencetoolkit.org/tools/microsoft-relativity/</guid><description>Seamlessly integrate Digital Evidence Preservation Toolkit (DEPT) into Microsoft Relativity, bringing powerful evidence validation, metadata analysis, secure archiving, and chain-of-custody tracking directly into your legal workflows.
-This integration enhances eDiscovery, compliance, and digital forensics, allowing law firms, investigators, and litigation teams to verify, preserve, and present digital evidence with unmatched security and integrity.
-What to Expect ✅ Automated Metadata Validation – Detect inconsistencies and verify authenticity within Relativity. ✅ Chain of Custody Tracking – Ensure tamper-proof documentation from collection to courtroom.</description></item><item><title>Turn WordPress into a Powerful Evidence Management Platform</title><link>https://digitalevidencetoolkit.org/tools/wordpress-plugin/?campaign=rss</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://digitalevidencetoolkit.org/tools/wordpress-plugin/</guid><description>The Digital Evidence Preservation Toolkit (DEPT) WordPress Plugin transforms WordPress into a secure, verifiable evidence management system, allowing teams to capture, authenticate, and manage digital content with built-in chain-of-custody tracking and court-ready exports.
-Whether you’re an investigative journalist, a legal professional, or a compliance officer, our plugin ensures that every piece of digital evidence is verifiable and tamper-proof.
-Key Features: ✅ Metadata Analysis – Automatically extract, verify, and log key metadata for every uploaded file.</description></item><item><title>Archive Webpages with Proof of Integrity</title><link>https://digitalevidencetoolkit.org/tools/webpage-archiving/?campaign=rss</link><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://digitalevidencetoolkit.org/tools/webpage-archiving/</guid><description>⚠️ Important Notice: AWS QLDB, one of the storage backends mentioned in this documentation, will reach end of support on July 31, 2025. We recommend using alternative immutable storage solutions. For more information, see AWS documentation.
-The Digital Evidence Preservation Toolkit (DEPT) offers a seamless way to capture and authenticate web content while ensuring a verifiable chain of custody. Our one-click browser extension allows you to archive webpages with cryptographic proof, making them admissible in legal, journalistic, and research contexts.</description></item><item><title>Original DEPToolkit prototype</title><link>https://digitalevidencetoolkit.org/tools/original-dept-prototype/?campaign=rss</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://digitalevidencetoolkit.org/tools/original-dept-prototype/</guid><description>📚 Historical Documentation: This page documents the original DEPToolkit prototype. Please note that AWS QLDB, which was used in this implementation, has been deprecated and will reach end of support on July 31, 2025. For current solutions, see our web archiving tools.
-Welcome to the documentation of the Digital Evidence Preservation Toolkit, a one-click tool to archive and annotate webpages while demonstrating chain of custody throughout. The Toolkit is a proof-of-concept software for researchers and small teams sifting through online material.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Tools on The Digital Evidence Preservation Toolkit</title><link>https://digitalevidencetoolkit.org/tools</link><author>Basile Simon</author><description>Open-source digital evidence preservation tools for legal professionals, archivists, and investigators. Features chain-of-custody tracking, cryptographic authentication, and seamless integration with popular platforms.</description><generator>Hugo 0.133.0</generator><language>en-gb</language><copyright>Copyright 2021-2025 Basile Simon. Licensed under CC BY 4.0.</copyright><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://digitalevidencetoolkit.org/tools/index.xml" rel="self" type="application/rss+xml"/><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license><item><title>Coming Soon: Digital Evidence Toolkit x Microsoft Relativity</title><link>https://digitalevidencetoolkit.org/tools/microsoft-relativity</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://digitalevidencetoolkit.org/tools/microsoft-relativity/</guid><description>Integrate Digital Evidence Toolkit with Microsoft Relativity for seamless eDiscovery, metadata validation, and chain-of-custody tracking in legal workflows. Enhance digital forensics and compliance.</description><content:encoded><![CDATA[<p>Seamlessly integrate Digital Evidence Preservation Toolkit (DEPT) into Microsoft Relativity, bringing powerful evidence validation, metadata analysis, secure archiving, and chain-of-custody tracking directly into your legal workflows.</p>
+<p>This integration enhances eDiscovery, compliance, and digital forensics, allowing law firms, investigators, and litigation teams to verify, preserve, and present digital evidence with unmatched security and integrity.</p>
+<hr>
+<h4 id="what-to-expect">What to Expect</h4>
+<ul>
+<li><strong>✅ Automated Metadata Validation</strong> – Detect inconsistencies and verify authenticity within Relativity.</li>
+<li><strong>✅ Chain of Custody Tracking</strong> – Ensure tamper-proof documentation from collection to courtroom.</li>
+<li><strong>✅ Secure Archiving –</strong> Store digital evidence with cryptographic verification for long-term integrity.</li>
+<li><strong>✅ Court-Ready Exports</strong> – Generate legally admissible reports within Relativity’s case management system.</li>
+</ul>
+<hr>
+<p><strong>Of High Interest? Be in Touch</strong></p>
+<p>We need to hear from you – please reach out to <code>&lt;hi@digitalevidencetoolkit.org&gt;</code> or subscribe to our newsletter:</p>
+<iframe src="https://digitalevidencetoolkit.substack.com/embed" width="100%" height="320" style="border:0px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+]]></content:encoded><category>microsoft-relativity</category><category>ediscovery</category><category>legal-tech</category><category>integration</category><dc:description>Integrate Digital Evidence Toolkit with Microsoft Relativity for seamless eDiscovery, metadata validation, and chain-of-custody tracking in legal workflows. Enhance digital forensics and compliance.</dc:description><dc:date>2025-01-01T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license></item><item><title>Turn WordPress into a Powerful Evidence Management Platform</title><link>https://digitalevidencetoolkit.org/tools/wordpress-plugin</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://digitalevidencetoolkit.org/tools/wordpress-plugin/</guid><description>Transform WordPress into a secure evidence management system with chain-of-custody tracking, Content Credentials integration, and court-ready exports. Perfect for legal professionals and investigative journalists.</description><content:encoded><![CDATA[<p>The Digital Evidence Preservation Toolkit (DEPT) WordPress Plugin transforms WordPress into a secure, verifiable evidence management system, allowing teams to capture, authenticate, and manage digital content with built-in chain-of-custody tracking and court-ready exports.</p>
+<p>Whether you’re an investigative journalist, a legal professional, or a compliance officer, our plugin ensures that every piece of digital evidence is verifiable and tamper-proof.</p>
+<hr>
+<h4 id="key-features">Key Features:</h4>
+<ul>
+<li><strong>✅ Metadata Analysis</strong> – Automatically extract, verify, and log key metadata for every uploaded file.</li>
+<li><strong>✅ Content Credentials Integration</strong> – Display cryptographic proof of authenticity and authorship using Content Credentials technology.</li>
+<li><strong>✅ Chain of Custody Tracking</strong> – Ensure secure, tamper-proof documentation of every change, action, and transfer.</li>
+<li><strong>✅ Court-Ready Exports</strong> – Generate reports in legally admissible formats with a verifiable audit trail.</li>
+<li><strong>✅ Seamless WordPress Integration</strong> – Works with existing media libraries, post types, and workflows.</li>
+<li><strong>✅ Conflict-Free Collaboration</strong> – Multiple team members can work simultaneously without data loss or conflicts.</li>
+</ul>
+<hr>
+<h3 id="how-it-works">How It Works</h3>
+<p>Built with PHP and TypeScript, the DEPT WordPress Plugin integrates with your WordPress CMS and enables automatic tracking and verification of all content changes.</p>
+<p>Using SHA-256 and CID hashing as well as a tamper-evident, append-only immutable database, each modification&rsquo;s provenance is recorded and tracked. The goal: to make your diligent research auditable and verifiable.</p>
+<p>Through their familiar Wordpress user interface, users can annotate, track revisions, and generate court-admissible reports with full chain-of-custody documentation.</p>
+<p>For multimedia and enhanced proof of authorship, the plugin incorporates Content Credentials (C2PA), ensuring that all media includes secure, verifiable identity markers.</p>
+<p>The plugin uses Conflict-free Replicated Data Types (CRDT) to handle conflicts between revisions, caused by several authors. Every edit is captured as a cryptographically signed operation with unique identifiers and logical timestamps. This enables:</p>
+<ul>
+<li>A complete audit trail – Every edit is individually tracked and verifiable;</li>
+<li>Automatic conflict resolution – Changes from multiple editors merge without conflicts;</li>
+<li>Bandwidth efficiency – Only the minimal necessary data is transmitted during synchronization.</li>
+</ul>
+<h4 id="high-level-architecture">High Level Architecture</h4>
+<p>The plugin&rsquo;s architecture places content provenance and legal verification at the forefront:</p>
+<ol>
+<li>Each edit operation is individually signed before leaving the WordPress site;</li>
+<li>Operations are stored in a tamper-evident sequence;</li>
+<li>Operations synchronize with our secure verification service;</li>
+<li>Merkle tree verification ensures that all operations remain unaltered;</li>
+<li>Cryptographic receipts provide court-admissible proof of content authenticity.</li>
+</ol>
+<p><img src="/images/wordpress-plugin-diagram.png" alt=""></p>
+<hr>
+<p><strong>Access the WordPress plugin and stay informed</strong></p>
+<p>Reach out to <code>&lt;hi@digitalevidencetoolkit.org&gt;</code> or subscribe to our newsletter:</p>
+<iframe src="https://digitalevidencetoolkit.substack.com/embed" width="100%" height="320" style="border:0px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+]]></content:encoded><category>wordpress</category><category>evidence-management</category><category>chain-of-custody</category><category>c2pa</category><category>crdt</category><dc:description>Transform WordPress into a secure evidence management system with chain-of-custody tracking, Content Credentials integration, and court-ready exports. Perfect for legal professionals and investigative journalists.</dc:description><dc:date>2025-01-01T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license></item><item><title>Archive Webpages with Proof of Integrity</title><link>https://digitalevidencetoolkit.org/tools/webpage-archiving</link><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://digitalevidencetoolkit.org/tools/webpage-archiving/</guid><description>One-click browser extension for archiving webpages with cryptographic proof and tamper-evident storage. Perfect for legal research, journalism, and compliance. Generate court-ready digital evidence records.</description><content:encoded><![CDATA[<blockquote>
+<p><strong>⚠️ Important Notice:</strong> AWS QLDB, one of the storage backends mentioned in this documentation, will reach end of support on July 31, 2025. We recommend using alternative immutable storage solutions. For more information, see <a href="https://docs.aws.amazon.com/qldb/latest/developerguide/document-history.html">AWS documentation</a>.</p>
+</blockquote>
+<p>The Digital Evidence Preservation Toolkit (DEPT) offers a seamless way to capture and authenticate web content while ensuring a verifiable chain of custody. Our one-click browser extension allows you to archive webpages with cryptographic proof, making them admissible in legal, journalistic, and research contexts.</p>
+<p>Every saved webpage is stored alongside metadata, DNS records, in tamper-evident data structures, ensuring long-term integrity. Whether you’re investigating misinformation, documenting critical online evidence, or preserving web pages for compliance, our solution guarantees authenticity you can trust.</p>
+<p><img src="/images/architecture.png" alt="Untitled"></p>
+<hr>
+<h4 id="key-features">Key Features:</h4>
+<ul>
+<li>✅ <strong>One-Click Webpage Archiving</strong> – Save full pages, screenshots, and metadata instantly.</li>
+<li>✅ <strong>Tamper-Proof Ledger</strong> – Cryptographic proof of integrity and a verifiable chain of custody.</li>
+<li>✅ <strong>Secure Storage &amp; Searchable Library</strong> – Easily retrieve and annotate archived pages.</li>
+<li>✅ <strong>Exportable &amp; Court-Ready</strong> – Generate legally admissible digital records.</li>
+</ul>
+<hr>
+<h4 id="how-it-works">How It Works</h4>
+<p>Our browser extension (JavaScript &amp; WebExtensions API) enables seamless webpage capture, storing screenshots and full-page HTML archives. These records are then processed by our Node.js &amp; TypeScript backend, which verifies integrity using SHA-256 hashing and records transactions in a ledger database (AWS QLDB or alternative immutable storage).</p>
+<p>The archived content is accessible through our SvelteKit-powered UI, which allows users to search, annotate, and export their saved records. Data can be securely stored locally or synced with an Amazon S3 bucket for long-term encrypted archiving.</p>
+<p>API integrations with Microsoft Relativity, Strapi, Notion, and Uwazi may extend these capabilities, enabling legal professionals and researchers to integrate web evidence directly into their existing case management systems.</p>
+<hr>
+<p><strong>Access the web archiving tools and stay informed</strong></p>
+<p>Reach out to <code>&lt;hi@digitalevidencetoolkit.org&gt;</code> or subscribe to our newsletter:</p>
+<iframe src="https://digitalevidencetoolkit.substack.com/embed" width="100%" height="320" style="border:0px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+]]></content:encoded><category>web-archiving</category><category>browser-extension</category><category>evidence-preservation</category><category>cryptographic-proof</category><dc:description>One-click browser extension for archiving webpages with cryptographic proof and tamper-evident storage. Perfect for legal research, journalism, and compliance. Generate court-ready digital evidence records.</dc:description><dc:date>2024-06-01T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license></item><item><title>Original DEPToolkit prototype</title><link>https://digitalevidencetoolkit.org/tools/original-dept-prototype</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://digitalevidencetoolkit.org/tools/original-dept-prototype/</guid><description>One-click browser tool to archive and annotate webpages with chain-of-custody documentation. Store evidence in tamper-proof ledgers with cryptographic verification. Perfect for researchers and small teams.</description><content:encoded><![CDATA[<blockquote>
+<p><strong>📚 Historical Documentation:</strong> This page documents the original DEPToolkit prototype. Please note that AWS QLDB, which was used in this implementation, has been deprecated and will reach end of support on July 31, 2025. For current solutions, see our <a href="/tools/webpage-archiving">web archiving tools</a>.</p>
+</blockquote>
+<p>Welcome to the documentation of the Digital Evidence Preservation Toolkit, a one-click tool to archive and annotate webpages while demonstrating chain of custody throughout. The Toolkit is a proof-of-concept software for researchers and small teams sifting through online material.</p>
+<p>With only one click of the mouse, the material will be <strong>archived in a framework demonstrating chain of custody</strong> and <strong>stored durably</strong>. Once included in the growing database, users will be able to <strong>go back to search through</strong> and <strong>annotate the material</strong>, and to <strong>export working copies</strong> of said material for publication and dissemination.</p>
+<p>A database built thusly can be handed to a prosecutor ten years down the line, and they will be able to say with mathematical certainty: <strong>“the material in this archive is identical and contemporary to the one saved at the time, ten years ago.”</strong></p>
+<hr>
+<h3 id="the-flow-from-30000ft"><strong>The flow from 30,000ft:</strong></h3>
+<p>A <strong>browser extension</strong> is tasked with passing data from the user to the system.
+The system receives this data through HTTP requests and <strong>records it into the ledger.
+A GUI of the library</strong> is served by the system, and this can also add data to the ledger. <strong>Annotations</strong> can be added to the archive through the UI. <strong>Working copies,</strong> true to the originals, can be exported through the UI.</p>
+<hr>
+<h3 id="-what-is-where">🤔 What is where?</h3>
+<p><strong>The browser extension</strong> is currently written in <strong>plain JS</strong> (as well as some HTML/CSS). The JS assets are bundled and moved in place by Webpack, which also provides auto-reloading of the extension in-browser.</p>
+<p><strong>The app and API</strong> are currently written in (mostly) <strong>Node &amp; TypeScript</strong>. It presently exposes REST endpoints (such as <code>/list-docs</code>, <code>/form</code>, etc.) and handles the interfacing with QLDB.</p>
+<p>An <strong>example UI</strong> is included and built in <strong>Svelte</strong>, an amazing frontend framework. It demonstrates how some of the above API endpoints can be implemented and some of the capabilities of the tool.</p>
+<p>All the above runs with <code>docker-compose</code>, as well as standalone <code>npm</code> scripts.</p>
+<hr>
+<h3 id="-so-where-are-we-today">🥱 So, where are we ${today}?</h3>
+<h4 id="the-api">The API</h4>
+<p>Both the browser extension and the app/API are in a functioning state, though features need to be developed in sync to be considered complete.</p>
+<p>Among other things, the browser extension is able to POST an object of the following shape to the API endpoint <code>/form</code> (ed: this name is terrible):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{ <span style="color:#a6e22e">url</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">title</span>: <span style="color:#66d9ef">string</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">scr</span>: <span style="color:#66d9ef">Base64DataURI</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">one_file</span>: <span style="color:#66d9ef">HTMLCodeString</span> }
+</span></span></code></pre></div><p>We&rsquo;re including:</p>
+<ul>
+<li><strong>a base64-encoded screenshot PNG</strong> which, disappointingly, is only the visible part of the screen (see <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/Tabs/captureVisibleTab"><code>browser.tabs.captureVisibleTab</code></a>).
+Moving to a full-page screenshot will involve some fiddling with simulating a scroll while capturing with Screen Capture API, I&rsquo;m told.
+These screenshots can be quite large (from a few hundred kbs to a couple of mbs) so on the app/API side we account for a chunked, streamed payload. All data from the browser is grouped in a <code>FormData()</code>.</li>
+<li><strong>a long string of HTML code</strong> which contains all HTML, inlined styles and JavaScript, as well as encoded images where possible.
+This is most definitely not quite <code>.mhtml</code>, which apparently is not supported on Firefox anymore since Quantum. Go figure!</li>
+</ul>
+<hr>
+<p>A main <code>Record</code> type is defined as the central data structure flowing through the application.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Record</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// list of files preserved and hashed
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// type Bundle
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">bundle</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>    { <span style="color:#a6e22e">typ</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;screenshot&#39;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;one_file&#39;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;screenshot_thumbnail&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">hash</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;aaaaaaa&#39;</span>
+</span></span><span style="display:flex;"><span>    }, {...}
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// user-created data about the record
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// most probably after the original archive
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// type Annotations
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">annotations</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;description&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">other_key</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;other val&#39;</span>
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// data points about the page saved
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// type Data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;page title&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;https://foo.bar.com&#39;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Examples of this data flowing:</strong></p>
+<ul>
+<li>Upon receiving <code>POST /form</code> , the API wrangles the payload data into this shape, which can then be passed to <code>Ledger.insertDoc</code> to be added to the ledger.
+(this includes side effects such as the writing to disk of screenshots and of the one-file archive)</li>
+<li>The frontend consumes the result of <code>GET /list-docs</code>, which still fetches data from QLDB after passing it through two successive formatting functions:
+<ul>
+<li><code>Record.fromLedger</code>, which takes QLDB-shaped data and builds a nice <code>Record</code> as defined above,</li>
+<li>then <code>Record.toFrontend</code> , which takes a <code>Record</code> and builds a simplified shape for the frontend.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Central to this type definition is the <em>Bundle:</em></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Bundle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">File</span>.<span style="color:#a6e22e">File</span>[];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">File</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">kind</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;screenshot&#34;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#34;one_file&#34;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#34;screenshot_thumbnail&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">hash</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;xxx&#34;</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>A Bundle is a list of files, which can only be of some kinds. At the back of our mind, these are the three kinds of files we&rsquo;re interested in for now:</p>
+<ul>
+<li>a page screenshot,</li>
+<li>and its thumbnail for rendering in the UI,</li>
+<li>as well as a one-file download of all the HTML/CSS/JS assets</li>
+</ul>
+<p>The QLDB logic can be found under the <code>QLDB.*</code> namespace.</p>
+<h3 id="the-ui">The UI</h3>
+<p>The webapp uses <a href="https://kit.svelte.dev">SvelteKit</a>, a JS framework. It implements two notables routes – the two main use stories:</p>
+<ul>
+<li>The Library: <code>src/routes/library.svelte</code></li>
+<li>The Verification: <code>src/routes/verify.svelte</code></li>
+</ul>
+<p><strong>Library</strong> renders a list of ledger entries, with their accompanying metadata. It supports the querying of a record&rsquo;s history, as well as the addition of metadata (i.e. a &ldquo;description&rdquo; field).</p>
+<ul>
+<li>details about how each of these features is replicated through the API</li>
+</ul>
+<p><strong>Verification</strong> implements the lookup process and surfacing of information made possible by the tool.</p>
+<hr>
+<h3 id="miscellaneous">Miscellaneous</h3>
+<h4 id="on-uniqueness">On uniqueness</h4>
+<p>Each record in our database contains a list of files that make it up (as of Aug 10th: a screenshot, its thumbnail, and a one-file HTML archive). Each is represented by its <em>kind</em> and its hash (sha256).</p>
+<p>The ID of the record is the hash of the concatenated hashes of its files:</p>
+<p><code>Record.id = hash(Record.files.sort().map(File.id).join(''))</code></p>
+<p>With self-identifiable data, it is possible to associate files to their ledger entries, since the ID can be computed from the files.</p>
+<h4 id="on-ledgers">On ledgers</h4>
+<p>&ldquo;A non ledger database is table-centric. A ledger database is log-centric. <strong>The log is the database.</strong>&rdquo; (<a href="https://ivan.mw/2019-11-24/what-is-a-ledger-database">Ivan Moto</a>)</p>
+<p>&ldquo;Standard databases track a sequence of transactions that add, delete, or change entries. Ledger databases add a layer of digital signatures for each transaction so anyone can audit the list and see that it was constructed correctly. More importantly, no one has gone back to adjust a previous transaction — to change history, so to speak.&rdquo; (<a href="https://venturebeat.com/2021/01/18/database-trends-why-you-need-a-ledger-database/">VentureBeat</a>)</p>
+<hr>
+<h3 id="getting-started">Getting started</h3>
+<p>If the instructions in this guide feel a bit much, it&rsquo;s likely because the Toolkit is still an alpha-version software which assumes a certain technical knowledge. There are technical solutions to simplifying this setup, but these were not prioritised.</p>
+<aside>
+🙏 If this is something you have expertise with and are happy to help, do reach out at **basile@digitalevidencetoolkit.org**
+</aside>
+<hr>
+<h4 id="setting-up-the-ledger">Setting up the ledger</h4>
+<p>The Toolkit requires a working connection with Amazon Web Services, and thus that you have some kind of well-permissioned account or IAM role.</p>
+<p>In short, you will need:</p>
+<ol>
+<li>the AWS CLI and an authorised profile in <code>~/.aws/credentials</code> (see <a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html">“Installing the AWS CLI v2”</a> - <em>docs.aws.amazon.com)</em></li>
+<li>an existing QLDB ledger, with a blank table in it (see <a href="https://qldbguide.com/docs/guide/getting-started/#using-aws-console">“Creating a QLDB ledger from the AWS Console”</a> - <em>qldbguide.com</em>)</li>
+</ol>
+<p>Not required but recommended is an S3 bucket in which to store Toolkit data.</p>
+<p><strong>Remember the names</strong> of the ledger and of its table. You&rsquo;ll need them shortly (see &ldquo;Environment&rdquo; below).</p>
+<hr>
+<h4 id="environment">Environment</h4>
+<p>After cloning the repository, create an <code>.env</code> file at the root or copy <code>.env.example</code>. The job of this file is to contain variables you really don&rsquo;t want to share publicly, so keep this out of version control software.</p>
+<p>This file <strong>must contain:</strong></p>
+<ul>
+<li>AWS access credentials and preferred region</li>
+<li>Details about the ledger and S3 bucket</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>AWS_ACCESS_KEY_ID<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your aws access key&#34;</span>
+</span></span><span style="display:flex;"><span>AWS_SECRET_ACCESS_KEY<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your aws secret key&#34;</span>
+</span></span><span style="display:flex;"><span>AWS_REGION<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;eu-central-1 (or another region)&#34;</span>
+</span></span><span style="display:flex;"><span>BUCKET_NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anS3BucketName&#34;</span>
+</span></span><span style="display:flex;"><span>LEDGER_NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;yourLedgerName&#34;</span>
+</span></span><span style="display:flex;"><span>DOC_TABLE_NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;yourTableName&#34;</span>
+</span></span></code></pre></div><hr>
+<h4 id="recommended-way-of-running-the-toolkit">Recommended way of running the Toolkit</h4>
+<aside>
+💡 At the very least, **you will need Docker installed on your system.** 
+</aside>
+<p>The Docker Compose orchestration is composed of several services:</p>
+<ol>
+<li>An Express/TypeScript API</li>
+<li>A plain JS browser extension</li>
+<li>And a frontend</li>
+</ol>
+<p>To start the whole app:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker-compose up
+</span></span></code></pre></div><hr>
+<h4 id="running-without-docker">Running without Docker</h4>
+<p>Ensure you&rsquo;re running <code>node &gt; 10.0</code> — the recommended version is the LTS, i.e. <code>node v16</code>. If you are using <code>nvm</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ nvm use --lts
+</span></span><span style="display:flex;"><span>&gt; Now using node v16.13.0
+</span></span></code></pre></div><p>Manually install dependencies for each service:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cd ui/ &amp; npm install
+</span></span><span style="display:flex;"><span>$ cd extension/ &amp; npm install
+</span></span><span style="display:flex;"><span>$ npm install
+</span></span></code></pre></div><p>Then use the npm script including all services:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ npm run all
+</span></span></code></pre></div><hr>
+<h4 id="storage-options">Storage options</h4>
+<p>By including a bucket in the <code>.env</code> config, you’re choosing to replicate your archival on S3.</p>
+<p>Namely, the Store (<code>src/store/index.ts</code>) will:</p>
+<ul>
+<li>upon receiving an archive request, store the Bundle files both locally and on S3,</li>
+<li>and upon receiving a file request (e.g. the UI fetching thumbnails), serve it from S3.</li>
+</ul>
+<hr>
+<h4 id="is-there-anybody-out-there">Is there anybody out there?</h4>
+<h5 id="api-and-frontend">API and frontend</h5>
+<p>The API should be available at <a href="https://github.com/digitalevidencetoolkit/deptoolkit/releases">http://localhost:3000</a> — assert this by running:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl http://localhost:3000/list-docs
+</span></span><span style="display:flex;"><span>&gt; <span style="color:#f92672">[</span> <span style="color:#f92672">{</span>...<span style="color:#f92672">}</span>, <span style="color:#f92672">{</span>...<span style="color:#f92672">}</span> <span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>The UI should be available at http://localhost:8000 in your web browser of choice. API requests are proxied through the UI. Thus, the following queries are equivalent:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl http://localhost:3000/list-docs        // as before
+</span></span><span style="display:flex;"><span>$ curl http://localhost:8000/api/list-docs
+</span></span></code></pre></div><h5 id="browser-extension">Browser extension</h5>
+<p>The extension should be being bundled on your filesystem. Pop open your browser&rsquo;s extension runtime by pasting this in the URL bar:</p>
+<p><code>about:debugging#/runtime/this-firefox</code></p>
+<p>Click <em>“Load temporary Add-on&hellip;”</em> and navigate to <code>extension/addon</code> to select <code>manifest.json</code>.</p>
+<p>The extension should have been loaded in your extension bar, as shown below:</p>
+<p><img src="/images/dept-untitled.png" alt="Untitled"></p>
+]]></content:encoded><category>prototype</category><category>browser-extension</category><category>qldb</category><category>aws</category><category>chain-of-custody</category><dc:description>One-click browser tool to archive and annotate webpages with chain-of-custody documentation. Store evidence in tamper-proof ledgers with cryptographic verification. Perfect for researchers and small teams.</dc:description><dc:date>2021-12-31T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license></item></channel></rss>
