@@ -1,36 +1,4 @@
 <style>
-  @font-face {
-    font-family: "PT Serif";
-    src: url("/fonts/PTSerif-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "PT Serif";
-    src: url("/fonts/PTSerif-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "PT Serif";
-    src: url("/fonts/PTSerif-Italic.ttf") format("truetype");
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "PT Serif";
-    src: url("/fonts/PTSerif-BoldItalic.ttf") format("truetype");
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-  }
-
   :root {
     --width: 800px;
     --font-main: "PT Serif", serif;
@@ -208,20 +176,19 @@
 
   /* Blog post header styling */
   .post-header {
-    margin-bottom: 3em;
-    padding-bottom: 1.5em;
-    border-bottom: 1px solid #ddd;
+    margin-top: 1.5em;
+    border-top: 1px solid #ddd;
   }
 
   @media (prefers-color-scheme: dark) {
     .post-header {
-      border-bottom-color: #555;
+      border-top-color: #555;
     }
   }
 
   .post-title {
     margin-bottom: 0.5em;
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 1.2;
   }
 
