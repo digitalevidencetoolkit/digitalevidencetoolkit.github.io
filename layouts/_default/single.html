@@ -9,6 +9,23 @@
   </i>
 </p>
 {{ end }}{{ end }}
+{{ if eq .Type "news" }}{{ if not .Params.menu }}
+<header class="post-header">
+  <h1 class="post-title">{{ .Title }}</h1>
+  {{ if .Description }}
+  <p class="post-subdeck">{{ .Description }}</p>
+  {{ end }}
+  <div class="post-meta">
+    {{ if .Params.author }}
+    <span class="post-author">{{ .Params.author }}</span>
+    <span class="meta-separator">•</span>
+    {{ end }}
+    <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate class="post-date">
+      {{ .Date.Format "January 2, 2006" }}
+    </time>
+  </div>
+</header>
+{{ end }}{{ end }}
 <div class="content">
   {{ .Content }}
 </div>
