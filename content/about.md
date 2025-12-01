@@ -30,4 +30,4 @@ Architecture and workflow graphics by [La Loma](https://laloma.info). Newsletter
 
 The [original Toolkit prototype](/tools/webpage-archiving/) was built and released in August 2021 with the support of the Prototype Fund, the German Federal Ministry for Education and Research, the Open Knowledge Foundation, with an additional contribution from Amazon Web Services – all of which ended in 2021.
 
-![Prototype Fund and OKFN logos](https://prototypefund.de/wp-content/uploads/2016/07/logo-bmbf.svg) ![OKFN logo](https://prototypefund.de/wp-content/uploads/2016/07/logo-okfn.svg)
+![BMBF logo](/images/logo-bmbf.svg) ![OKFN logo](/images/logo-okfn.svg)
