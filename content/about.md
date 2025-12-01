@@ -28,6 +28,6 @@ Architecture and workflow graphics by [La Loma](https://laloma.info). Newsletter
 
 ### About our funding
 
-The [original Toolkit prototype](/tools/webpage-archiving/) was built and released in August 2021 with the support of the Prototype Fund, the German Federal Ministry for Education and Research, the Open Knowledge Foundation, with an additional contribution from Amazon Web Services – all of which ended in 2021.
+The [original Toolkit prototype](/tools/webpage-archiving/) was built and released in August 2021 with the support of the Prototype Fund, the German Federal Ministry for Education and Research (BMBF, grant number 01IS21S26), the Open Knowledge Foundation, with an additional contribution from Amazon Web Services – all of which ended in 2021.
 
 ![BMBF logo](/images/logo-bmbf.svg) ![OKFN logo](/images/logo-okfn.svg)
