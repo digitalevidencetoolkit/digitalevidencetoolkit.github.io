@@ -1,5 +1,6 @@
 ---
 description: Preserve, authenticate and present digital evidence with advanced chain-of-custody tracking. Ensure data integrity and courtroom-ready results for legal professionals, archivists, and investigators.
+lastmod: 2025-12-01
 ---
 
 _Redefining Digital Evidence Management with Advanced Custody and Verification._  
