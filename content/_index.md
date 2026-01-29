@@ -1,9 +1,16 @@
 ---
 description: Preserve, authenticate and present digital evidence with advanced chain-of-custody tracking. Ensure data integrity and courtroom-ready results for legal professionals, archivists, and investigators.
+lastmod: 2025-12-01
 ---
 
 _Redefining Digital Evidence Management with Advanced Custody and Verification._  
 _〰️ Preserve 〰️ Authenticate 〰️ Annotate 〰️ Present 〰️_
+
+<div style="background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f0 100%); border-left: 4px solid #3273dc; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 4px;">
+<strong style="color: #1a4a6e;">📰 Latest news</strong><br/>
+<span style="color: #2c5a7a;">In December 2025, the Toolkit received investment from the <a href="https://www.miz-babelsberg.de/" style="color: #3273dc;">Babelsberg Media Innovation Center</a> to develop a sustainable business plan and product targeting the investigative journalism vertical. We are grateful for their trust and support.<br/>
+We are now hard at work, in partnership with <a href="https://dot.studio" style="color: #3273dc;">Dot•Studio</a>, and will present a product in Q1 2026.</span>
+</div>
 
 ---
 
