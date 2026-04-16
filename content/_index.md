@@ -8,8 +8,7 @@ _〰️ Preserve 〰️ Authenticate 〰️ Annotate 〰️ Present 〰️_
 
 <div style="background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f0 100%); border-left: 4px solid #3273dc; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 4px;">
 <strong style="color: #1a4a6e;">📰 Latest news</strong><br/>
-<span style="color: #2c5a7a;">In December 2025, the Toolkit received investment from the <a href="https://www.miz-babelsberg.de/" style="color: #3273dc;">Babelsberg Media Innovation Center</a> to develop a sustainable business plan and product targeting the investigative journalism vertical. We are grateful for their trust and support.<br/>
-We are now hard at work, in partnership with <a href="https://dot.studio" style="color: #3273dc;">Dot•Studio</a>, and will present a product in Q1 2026.</span>
+<span style="color: #2c5a7a;">We are now deploying our new product, <a href="https://evidx.de" style="color: #3273dc;">evidx.de</a>, to pilot media partners. Built in partnership with <a href="https://dot.studio" style="color: #3273dc;">Dot•Studio</a>, with seed investment from the <a href="https://www.miz-babelsberg.de/" style="color: #3273dc;">Babelsberg Media Innovation Center</a>.</span>
 </div>
 
 ---
@@ -28,15 +27,17 @@ We integrate advanced chain-of-custody tracking and OSI verification workflows i
 
 <h1 style="margin-bottom: 0; margin-top: 2rem;">Powerful, Usable Tools That You Already Work with</h1>
 
-#### **WordPress Plugin**
-
-<p class="p-0">Make Wordpress a stronger evidence-management platform for your team. Include metadata analysis, Content Credentials presentation, chain of custody tracking, and court-ready exports. <br/>
-<a href="./tools/wordpress-plugin">→ Read more</a></p>
+<img src="https://basilesimon.fr/assets/dept-evidx.png" alt="evidx.de" style="width: 200px; max-width: 100%; margin-top: 1rem; margin-bottom: -1rem; display: block;"/>
 
 #### **Web Archiving Solution**:
 
 <p class="p-0">Securely capture and preserve web content with our easy-to-use browser extension. Automatically store web pages, metadata, and DNS records in a cryptographically verifiable, tamper-evident data structures. Ideal for legal discovery, journalistic investigations, and compliance needs. <br/>
-<a href="./tools/webpage-archiving">→ Read more</a></p>
+<a href="https://evidx.de/?campaign=dept">→ evidx.de</a></p>
+
+#### **WordPress Plugin**
+
+<p class="p-0">Make Wordpress a stronger evidence-management platform for your team. Include metadata analysis, Content Credentials presentation, chain of custody tracking, and court-ready exports. <br/>
+<a href="./tools/wordpress-plugin">→ Read more</a></p>
 
 #### **Customizable CMS Integrations**:
 
