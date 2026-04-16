@@ -8,7 +8,7 @@ _〰️ Preserve 〰️ Authenticate 〰️ Annotate 〰️ Present 〰️_
 
 <div style="background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f0 100%); border-left: 4px solid #3273dc; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 4px;">
 <strong style="color: #1a4a6e;">📰 Latest news</strong><br/>
-<span style="color: #2c5a7a;">We are now deploying our new product, <a href="https://evidx.de" style="color: #3273dc;">evidx.de</a>, to pilot media partners. Built in partnership with <a href="https://dot.studio" style="color: #3273dc;">Dot•Studio</a>, with seed investment from the <a href="https://www.miz-babelsberg.de/" style="color: #3273dc;">Babelsberg Media Innovation Center</a>.</span>
+<span style="color: #2c5a7a;">We are now deploying our new product, <a href="https://evidx.de/?campaign=dept" style="color: #3273dc;">evidx.de</a>, to pilot media partners. Built in partnership with <a href="https://dot.studio" style="color: #3273dc;">Dot•Studio</a>, with seed investment from the <a href="https://www.miz-babelsberg.de/" style="color: #3273dc;">Babelsberg Media Innovation Center</a>.</span>
 </div>
 
 ---
