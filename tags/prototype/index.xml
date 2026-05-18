@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Prototype on The Digital Evidence Preservation Toolkit</title><link>https://digitalevidencetoolkit.org/tags/prototype</link><author>Basile Simon</author><description>Preserve, authenticate and present digital evidence with advanced chain-of-custody tracking. Ensure data integrity and courtroom-ready results for legal professionals, archivists, and investigators.</description><generator>Hugo 0.133.0</generator><language>en-gb</language><copyright>Copyright 2021-2025 Basile Simon. Licensed under CC BY 4.0.</copyright><lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://digitalevidencetoolkit.org/tags/prototype/index.xml" rel="self" type="application/rss+xml"/><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license><item><title>Original DEPToolkit prototype</title><link>https://digitalevidencetoolkit.org/tools/original-dept-prototype</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://digitalevidencetoolkit.org/tools/original-dept-prototype/</guid><description>One-click browser tool to archive and annotate webpages with chain-of-custody documentation. Store evidence in tamper-proof ledgers with cryptographic verification. Perfect for researchers and small teams.</description><content:encoded><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Prototype on The Digital Evidence Preservation Toolkit</title><link>https://digitalevidencetoolkit.org/tags/prototype</link><author>Basile Simon</author><description>Preserve, authenticate and present digital evidence with advanced chain-of-custody tracking. Ensure data integrity and courtroom-ready results for legal professionals, archivists, and investigators.</description><generator>Hugo 0.158.0</generator><language>en</language><copyright>Copyright 2020-2026 Basile Simon. Licensed under CC BY 4.0.</copyright><lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://digitalevidencetoolkit.org/tags/prototype/index.xml" rel="self" type="application/rss+xml"/><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license><item><title>Original DEPToolkit prototype</title><link>https://digitalevidencetoolkit.org/tools/original-dept-prototype</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://digitalevidencetoolkit.org/tools/original-dept-prototype/</guid><description>One-click browser tool to archive and annotate webpages with chain-of-custody documentation. Store evidence in tamper-proof ledgers with cryptographic verification. Perfect for researchers and small teams.</description><content:encoded><![CDATA[<blockquote>
 <p><strong>📚 Historical Documentation:</strong> This page documents the original DEPToolkit prototype. Please note that AWS QLDB, which was used in this implementation, has been deprecated and will reach end of support on July 31, 2025. For current solutions, see our <a href="/tools/webpage-archiving">web archiving tools</a>.</p>
 </blockquote>
 <p>Welcome to the documentation of the Digital Evidence Preservation Toolkit, a one-click tool to archive and annotate webpages while demonstrating chain of custody throughout. The Toolkit is a proof-of-concept software for researchers and small teams sifting through online material.</p>
@@ -20,7 +20,7 @@ A GUI of the library</strong> is served by the system, and this can also add dat
 <h4 id="the-api">The API</h4>
 <p>Both the browser extension and the app/API are in a functioning state, though features need to be developed in sync to be considered complete.</p>
 <p>Among other things, the browser extension is able to POST an object of the following shape to the API endpoint <code>/form</code> (ed: this name is terrible):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{ <span style="color:#a6e22e">url</span>: <span style="color:#66d9ef">string</span>,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{ <span style="color:#a6e22e">url</span>: <span style="color:#66d9ef">string</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">title</span>: <span style="color:#66d9ef">string</span>,
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">scr</span>: <span style="color:#66d9ef">Base64DataURI</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">one_file</span>: <span style="color:#66d9ef">HTMLCodeString</span> }
@@ -34,27 +34,27 @@ This is most definitely not quite <code>.mhtml</code>, which apparently is not s
 </ul>
 <hr>
 <p>A main <code>Record</code> type is defined as the central data structure flowing through the application.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Record</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Record</span> {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// list of files preserved and hashed
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// type Bundle
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">bundle</span><span style="color:#f92672">:</span> [
+</span></span></span><span style="display:flex;"><span>  <span style="color:#75715e">// type Bundle
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">bundle</span><span style="color:#f92672">:</span> [
 </span></span><span style="display:flex;"><span>    { <span style="color:#a6e22e">typ</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;screenshot&#39;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;one_file&#39;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;screenshot_thumbnail&#39;</span>,
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">hash</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;aaaaaaa&#39;</span>
 </span></span><span style="display:flex;"><span>    }, {...}
 </span></span><span style="display:flex;"><span>  ],
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// user-created data about the record
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// most probably after the original archive
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// type Annotations
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">annotations</span><span style="color:#f92672">:</span> [
+</span></span></span><span style="display:flex;"><span>  <span style="color:#75715e">// most probably after the original archive
+</span></span></span><span style="display:flex;"><span>  <span style="color:#75715e">// type Annotations
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">annotations</span><span style="color:#f92672">:</span> [
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;description&#39;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">other_key</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;other val&#39;</span>
 </span></span><span style="display:flex;"><span>  ],
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">// data points about the page saved
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// type Data
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {
+</span></span></span><span style="display:flex;"><span>  <span style="color:#75715e">// type Data
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;page title&#39;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;https://foo.bar.com&#39;</span>
 </span></span><span style="display:flex;"><span>  }
@@ -72,7 +72,7 @@ This is most definitely not quite <code>.mhtml</code>, which apparently is not s
 </li>
 </ul>
 <p><strong>Central to this type definition is the <em>Bundle:</em></strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Bundle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">File</span>.<span style="color:#a6e22e">File</span>[];
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Bundle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">File</span>.<span style="color:#a6e22e">File</span>[];
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">File</span> <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">kind</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;screenshot&#34;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#34;one_file&#34;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#34;screenshot_thumbnail&#34;</span>;
@@ -130,7 +130,7 @@ This is most definitely not quite <code>.mhtml</code>, which apparently is not s
 <li>AWS access credentials and preferred region</li>
 <li>Details about the ledger and S3 bucket</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>AWS_ACCESS_KEY_ID<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your aws access key&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>AWS_ACCESS_KEY_ID<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your aws access key&#34;</span>
 </span></span><span style="display:flex;"><span>AWS_SECRET_ACCESS_KEY<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your aws secret key&#34;</span>
 </span></span><span style="display:flex;"><span>AWS_REGION<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;eu-central-1 (or another region)&#34;</span>
 </span></span><span style="display:flex;"><span>BUCKET_NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anS3BucketName&#34;</span>
@@ -148,18 +148,18 @@ This is most definitely not quite <code>.mhtml</code>, which apparently is not s
 <li>And a frontend</li>
 </ol>
 <p>To start the whole app:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker-compose up
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker-compose up
 </span></span></code></pre></div><hr>
 <h4 id="running-without-docker">Running without Docker</h4>
 <p>Ensure you&rsquo;re running <code>node &gt; 10.0</code> — the recommended version is the LTS, i.e. <code>node v16</code>. If you are using <code>nvm</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ nvm use --lts
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ nvm use --lts
 </span></span><span style="display:flex;"><span>&gt; Now using node v16.13.0
 </span></span></code></pre></div><p>Manually install dependencies for each service:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cd ui/ &amp; npm install
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cd ui/ &amp; npm install
 </span></span><span style="display:flex;"><span>$ cd extension/ &amp; npm install
 </span></span><span style="display:flex;"><span>$ npm install
 </span></span></code></pre></div><p>Then use the npm script including all services:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ npm run all
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ npm run all
 </span></span></code></pre></div><hr>
 <h4 id="storage-options">Storage options</h4>
 <p>By including a bucket in the <code>.env</code> config, you’re choosing to replicate your archival on S3.</p>
@@ -172,10 +172,10 @@ This is most definitely not quite <code>.mhtml</code>, which apparently is not s
 <h4 id="is-there-anybody-out-there">Is there anybody out there?</h4>
 <h5 id="api-and-frontend">API and frontend</h5>
 <p>The API should be available at <a href="https://github.com/digitalevidencetoolkit/deptoolkit/releases">http://localhost:3000</a> — assert this by running:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl http://localhost:3000/list-docs
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl http://localhost:3000/list-docs
 </span></span><span style="display:flex;"><span>&gt; <span style="color:#f92672">[</span> <span style="color:#f92672">{</span>...<span style="color:#f92672">}</span>, <span style="color:#f92672">{</span>...<span style="color:#f92672">}</span> <span style="color:#f92672">]</span>
 </span></span></code></pre></div><p>The UI should be available at http://localhost:8000 in your web browser of choice. API requests are proxied through the UI. Thus, the following queries are equivalent:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl http://localhost:3000/list-docs        // as before
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl http://localhost:3000/list-docs        // as before
 </span></span><span style="display:flex;"><span>$ curl http://localhost:8000/api/list-docs
 </span></span></code></pre></div><h5 id="browser-extension">Browser extension</h5>
 <p>The extension should be being bundled on your filesystem. Pop open your browser&rsquo;s extension runtime by pasting this in the URL bar:</p>
