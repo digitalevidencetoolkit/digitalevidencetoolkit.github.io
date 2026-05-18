@@ -25,12 +25,8 @@
 <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
 {{ end }}
 
-<!-- Enhanced Twitter Card Tags -->
+<!-- Twitter/X Card Tags -->
 <meta name="twitter:card" content="summary_large_image">
-{{ with .Site.Params.twitter }}
-<meta name="twitter:site" content="@{{ . }}">
-<meta name="twitter:creator" content="@{{ . }}">
-{{ end }}
 {{ if $image }}
 <meta name="twitter:image" content="{{ $image }}">
 {{ end }}
@@ -87,7 +83,7 @@
       "sameAs": [
         "{{ .Site.Params.mastodon }}",
         "{{ .Site.Params.github }}",
-        "https://twitter.com/{{ .Site.Params.twitter }}"
+        "{{ .Site.Params.bluesky }}"
       ]
     },
     "publisher": {
@@ -99,7 +95,7 @@
       "@type": "WebPage",
       "@id": {{ .Permalink }}
     },
-    "inLanguage": "{{ .Site.LanguageCode }}",
+    "inLanguage": "{{ .Site.Language.Locale }}",
     "copyrightHolder": {
       "@type": "Person",
       "name": {{ .Site.Params.copyrightHolder }}
@@ -162,7 +158,7 @@
       "sameAs": [
         "{{ .Site.Params.mastodon }}",
         "{{ .Site.Params.github }}",
-        "https://twitter.com/{{ .Site.Params.twitter }}"
+        "{{ .Site.Params.bluesky }}"
       ]
     },
     "knowsAbout": [
@@ -188,7 +184,7 @@
     "url": {{ .Permalink }},
     "description": {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }},
     {{ if $image }}"image": {{ $image }},{{ end }}
-    "inLanguage": "{{ .Site.LanguageCode }}",
+    "inLanguage": "{{ .Site.Language.Locale }}",
     "isPartOf": {
       "@type": "WebSite",
       "name": {{ .Site.Title }},

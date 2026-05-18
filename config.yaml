@@ -1,8 +1,9 @@
 baseURL: https://digitalevidencetoolkit.org
-languageCode: en-gb
+language:
+  locale: en-gb
 title: The Digital Evidence Preservation Toolkit
 author: Basile Simon
-copyright: "Copyright © 2021-25, Basile Simon"
+copyright: "Copyright © 2020-26, Basile Simon"
 theme: hugo-bearblog
 enableRobotsTXT: true
 
@@ -23,7 +24,7 @@ params:
   author: Basile Simon
 
   # Social media handles for Open Graph and schema.org
-  twitter: "basilesimon"
+  bluesky: "https://bsky.app/profile/basilesimon.bsky.social"
   mastodon: "https://vis.social/@basilesimon"
   github: "https://github.com/digitalevidencetoolkit"
 
@@ -35,7 +36,7 @@ params:
   license: "https://creativecommons.org/licenses/by/4.0/"
   licenseName: "CC BY 4.0"
   copyrightHolder: "Basile Simon"
-  copyrightYear: "2021-2025"
+  copyrightYear: "2020-2026"
 
   # Organization details for schema.org
   organizationName: "Digital Evidence Toolkit"

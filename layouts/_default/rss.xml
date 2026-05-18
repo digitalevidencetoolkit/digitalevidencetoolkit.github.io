@@ -41,7 +41,7 @@
     <author>{{ .Site.Params.author }}</author>
     <description>{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}</description>
     <generator>Hugo {{ hugo.Version }}</generator>
-    <language>{{ site.Language.LanguageCode }}</language>
+    <language>{{ site.Language.Locale }}</language>
     <copyright>Copyright {{ .Site.Params.copyrightYear }} {{ .Site.Params.copyrightHolder }}. Licensed under {{ .Site.Params.licenseName }}.</copyright>{{ if not .Date.IsZero }}
     <lastBuildDate>{{ (index $pages.ByLastmod.Reverse 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- with .OutputFormats.Get "RSS" }}
