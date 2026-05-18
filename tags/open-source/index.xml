@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Open-Source on The Digital Evidence Preservation Toolkit</title><link>https://digitalevidencetoolkit.org/tags/open-source</link><author>Basile Simon</author><description>Preserve, authenticate and present digital evidence with advanced chain-of-custody tracking. Ensure data integrity and courtroom-ready results for legal professionals, archivists, and investigators.</description><generator>Hugo 0.158.0</generator><language>en</language><copyright>Copyright 2020-2026 Basile Simon. Licensed under CC BY 4.0.</copyright><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://digitalevidencetoolkit.org/tags/open-source/index.xml" rel="self" type="application/rss+xml"/><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license><item><title>Zeitwerk — Trusted timestamps without the blockchain</title><link>https://digitalevidencetoolkit.org/tools/zeitwerk-timestamping</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://digitalevidencetoolkit.org/tools/zeitwerk-timestamping/</guid><description>Zeitwerk is a free, open-source timestamping service built on a coordinated federation of independent European operators, with no cryptocurrency dependency.</description><content:encoded><![CDATA[<p>In our constituencies, proving that a file existed exactly like this before a potential controversy is a requirement. <em>&ldquo;I owned a copy of this file at this date,&rdquo;</em> I want to be able to say to a court.</p>
+<p><strong>Timestamping is how you prove it — and as AI-generated content erodes baseline trust in digital media, it&rsquo;s becoming critical infrastructure for democracy. Today&rsquo;s options are inadequate: legal notaries are expensive and inaccessible, commercial services create vendor lock-in, and Bitcoin-based solutions tie essential infrastructure to an energy-intensive system with volatile governance.</strong></p>
+<style>
+.zeitwerk-intro { display: flex; align-items: center; gap: 2rem; margin: 1.5rem 0; }
+.zeitwerk-intro img { width: 50%; flex-shrink: 0; }
+.zeitwerk-intro p { margin: 0; }
+@media (max-width: 600px) {
+  .zeitwerk-intro { flex-direction: column; gap: 1rem; }
+  .zeitwerk-intro img { width: 80px; }
+}
+</style>
+<div class="zeitwerk-intro">
+  <img src="/images/logo-zeitwerk.png" alt="Zeitwerk logo" />
+  <p><b>Zeitwerk</b> is a free, open-source timestamping service whose trust comes from a coordinated federation of independent 🇪🇺 European operators — with cross-witness transparency built in and no cryptocurrency dependency.</p>
+</div>
+<hr>
+<h4 id="how-it-works">How it works</h4>
+<pre tabindex="0"><code>You submit a hash          →    Witness A signs it
+                           →    Witness B signs it
+                           →    Witness C signs it
+                                    ↓
+                           Witnesses cross-verify
+                           each other&#39;s checkpoints
+                                    ↓
+                         You receive a proof bundle
+                         verifiable offline, forever
+</code></pre><p>Proofs are self-contained. They don&rsquo;t expire, don&rsquo;t require Zeitwerk to keep existing, and don&rsquo;t need any blockchain to verify. A proof generated today will still be checkable in twenty years with nothing but the standalone verifier and the file it certifies.</p>
+<hr>
+<h3 id="how-it-compares">How it compares</h3>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th style="text-align: center"><strong>Self-hostable</strong></th>
+          <th style="text-align: center"><strong>No cryptocurrency</strong></th>
+          <th style="text-align: center"><strong>Federated trust</strong></th>
+          <th style="text-align: center"><strong>Free for public-interest use</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Zeitwerk</strong></td>
+          <td style="text-align: center">✅</td>
+          <td style="text-align: center">✅</td>
+          <td style="text-align: center">✅</td>
+          <td style="text-align: center">✅</td>
+      </tr>
+      <tr>
+          <td>OpenTimestamps</td>
+          <td style="text-align: center">✅</td>
+          <td style="text-align: center">❌ Bitcoin-dependent</td>
+          <td style="text-align: center">❌</td>
+          <td style="text-align: center">✅</td>
+      </tr>
+      <tr>
+          <td>eIDAS Qualified Timestamps</td>
+          <td style="text-align: center">❌</td>
+          <td style="text-align: center">✅</td>
+          <td style="text-align: center">❌ Centralised</td>
+          <td style="text-align: center">❌ Costly</td>
+      </tr>
+      <tr>
+          <td>OriginStamp, Chainpoint</td>
+          <td style="text-align: center">❌ Commercial</td>
+          <td style="text-align: center">Varies</td>
+          <td style="text-align: center">❌</td>
+          <td style="text-align: center">❌</td>
+      </tr>
+      <tr>
+          <td>Certificate Transparency</td>
+          <td style="text-align: center">✅</td>
+          <td style="text-align: center">✅</td>
+          <td style="text-align: center">✅</td>
+          <td style="text-align: center">✅ (but TLS-only)</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h4 id="who-is-it-for">Who is it for?</h4>
+<p>Researchers · Archivists · Software maintainers · Journalists · Public institutions · Developers integrating timestamping into their tools</p>
+<hr>
+<h4 id="status">Status</h4>
+<p>Zeitwerk is in active development, funded by <a href="https://prototypefund.de">Prototype Fund</a> (2026 cohort). The goal is a coordinated European federation: shared protocols, recruited institutional operators, and a sustainability plan independent of any single funder or company.</p>
+<hr>
+<p><strong>Stay informed</strong></p>
+<p>Reach out to <code>&lt;hi@digitalevidencetoolkit.org&gt;</code> or subscribe to our newsletter:</p>
+<iframe src="https://digitalevidencetoolkit.substack.com/embed" width="100%" height="320" style="border:0px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+]]></content:encoded><category>timestamping</category><category>open-source</category><category>integrity</category><category>evidence-preservation</category><dc:description>Zeitwerk is a free, open-source timestamping service built on a coordinated federation of independent European operators, with no cryptocurrency dependency.</dc:description><dc:date>2026-01-01T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license></item></channel></rss>
