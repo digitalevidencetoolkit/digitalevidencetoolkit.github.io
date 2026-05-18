@@ -5,7 +5,9 @@ description: "Zeitwerk is a free, open-source timestamping service built on a co
 tags: ["timestamping", "open-source", "integrity", "evidence-preservation"]
 ---
 
-Timestamping proves that a piece of data existed at a specific moment in time. It underpins contract verification, scientific data integrity, software release provenance, and archival workflows. As AI-generated content erodes trust in digital media, reliable and accessible timestamping becomes critical infrastructure.
+In our constituencies, proving that a file existed exactly like this before a potential controversy is a requirement. _"I owned a copy of this file at this date,"_ I want to be able to say to a court.
+
+**Timestamping is how you prove it — and as AI-generated content erodes baseline trust in digital media, it's becoming critical infrastructure for democracy. Today's options are inadequate: legal notaries are expensive and inaccessible, commercial services create vendor lock-in, and Bitcoin-based solutions tie essential infrastructure to an energy-intensive system with volatile governance.**
 
 <style>
 .zeitwerk-intro { display: flex; align-items: center; gap: 2rem; margin: 1.5rem 0; }
@@ -38,7 +40,19 @@ You submit a hash          →    Witness A signs it
                          verifiable offline, forever
 ```
 
-No single operator is trusted alone. Misbehaviour by any witness is externally detectable.
+Proofs are self-contained. They don't expire, don't require Zeitwerk to keep existing, and don't need any blockchain to verify. A proof generated today will still be checkable in twenty years with nothing but the standalone verifier and the file it certifies.
+
+---
+
+### How it compares
+
+| | **Self-hostable** | **No cryptocurrency** | **Federated trust** | **Free for public-interest use** |
+|---|:---:|:---:|:---:|:---:|
+| **Zeitwerk** | ✅ | ✅ | ✅ | ✅ |
+| OpenTimestamps | ✅ | ❌ Bitcoin-dependent | ❌ | ✅ |
+| eIDAS Qualified Timestamps | ❌ | ✅ | ❌ Centralised | ❌ Costly |
+| OriginStamp, Chainpoint | ❌ Commercial | Varies | ❌ | ❌ |
+| Certificate Transparency | ✅ | ✅ | ✅ | ✅ (but TLS-only) |
 
 ---
 
