@@ -27,54 +27,45 @@
 </code></pre><p>Proofs are self-contained. They don&rsquo;t expire, don&rsquo;t require Zeitwerk to keep existing, and don&rsquo;t need any blockchain to verify. A proof generated today will still be checkable in twenty years with nothing but the standalone verifier and the file it certifies.</p>
 <hr>
 <h3 id="how-it-compares">How it compares</h3>
-<table>
-  <thead>
-      <tr>
-          <th></th>
-          <th style="text-align: center"><strong>Self-hostable</strong></th>
-          <th style="text-align: center"><strong>No cryptocurrency</strong></th>
-          <th style="text-align: center"><strong>Federated trust</strong></th>
-          <th style="text-align: center"><strong>Free for public-interest use</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Zeitwerk</strong></td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-      </tr>
-      <tr>
-          <td>OpenTimestamps</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">❌ Bitcoin-dependent</td>
-          <td style="text-align: center">❌</td>
-          <td style="text-align: center">✅</td>
-      </tr>
-      <tr>
-          <td>eIDAS Qualified Timestamps</td>
-          <td style="text-align: center">❌</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">❌ Centralised</td>
-          <td style="text-align: center">❌ Costly</td>
-      </tr>
-      <tr>
-          <td>OriginStamp, Chainpoint</td>
-          <td style="text-align: center">❌ Commercial</td>
-          <td style="text-align: center">Varies</td>
-          <td style="text-align: center">❌</td>
-          <td style="text-align: center">❌</td>
-      </tr>
-      <tr>
-          <td>Certificate Transparency</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅</td>
-          <td style="text-align: center">✅ (but TLS-only)</td>
-      </tr>
-  </tbody>
-</table>
+<style>
+.zw-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+.zw-features span {
+  background: #f0f0f0;
+  border-radius: 2em;
+  padding: 0.3em 0.9em;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+.zw-competitors {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+.zw-competitors li {
+  padding: 0.4em 0 0.4em 0.5rem;
+  border-top: 1px solid #eee;
+  font-size: 0.9em;
+  list-style: none !important;
+}
+</style>
+<div class="zw-features">
+  <span>✅ Self-hostable</span>
+  <span>✅ No cryptocurrency</span>
+  <span>✅ Federated trust</span>
+  <span>✅ Free for public-interest use</span>
+</div>
+<p><strong>The alternatives, in brief:</strong></p>
+<ul class="zw-competitors">
+  <li><strong>OpenTimestamps</strong> — self-hostable and free, but Bitcoin-dependent and single-operator</li>
+  <li><strong>eIDAS Qualified Timestamps</strong> — no crypto, but centralised, proprietary, and costly</li>
+  <li><strong>OriginStamp, Chainpoint</strong> — commercial services, varying crypto use, no federation</li>
+  <li><strong>Certificate Transparency</strong> — federated and free, but scoped to TLS certificate infrastructure only</li>
+</ul>
 <hr>
 <h4 id="who-is-it-for">Who is it for?</h4>
 <p>Researchers · Archivists · Software maintainers · Journalists · Public institutions · Developers integrating timestamping into their tools</p>
