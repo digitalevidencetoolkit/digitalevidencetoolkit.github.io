@@ -46,13 +46,48 @@ Proofs are self-contained. They don't expire, don't require Zeitwerk to keep exi
 
 ### How it compares
 
-| | **Self-hostable** | **No cryptocurrency** | **Federated trust** | **Free for public-interest use** |
-|---|:---:|:---:|:---:|:---:|
-| **Zeitwerk** | ✅ | ✅ | ✅ | ✅ |
-| OpenTimestamps | ✅ | ❌ Bitcoin-dependent | ❌ | ✅ |
-| eIDAS Qualified Timestamps | ❌ | ✅ | ❌ Centralised | ❌ Costly |
-| OriginStamp, Chainpoint | ❌ Commercial | Varies | ❌ | ❌ |
-| Certificate Transparency | ✅ | ✅ | ✅ | ✅ (but TLS-only) |
+<style>
+.zw-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+.zw-features span {
+  background: #f0f0f0;
+  border-radius: 2em;
+  padding: 0.3em 0.9em;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+.zw-competitors {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+.zw-competitors li {
+  padding: 0.4em 0 0.4em 0.5rem;
+  border-top: 1px solid #eee;
+  font-size: 0.9em;
+  list-style: none !important;
+}
+</style>
+
+<div class="zw-features">
+  <span>✅ Self-hostable</span>
+  <span>✅ No cryptocurrency</span>
+  <span>✅ Federated trust</span>
+  <span>✅ Free for public-interest use</span>
+</div>
+
+**The alternatives, in brief:**
+
+<ul class="zw-competitors">
+  <li><strong>OpenTimestamps</strong> — self-hostable and free, but Bitcoin-dependent and single-operator</li>
+  <li><strong>eIDAS Qualified Timestamps</strong> — no crypto, but centralised, proprietary, and costly</li>
+  <li><strong>OriginStamp, Chainpoint</strong> — commercial services, varying crypto use, no federation</li>
+  <li><strong>Certificate Transparency</strong> — federated and free, but scoped to TLS certificate infrastructure only</li>
+</ul>
 
 ---
 
