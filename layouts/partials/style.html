@@ -89,6 +89,23 @@
 
   table {
     width: 100%;
+    border-collapse: collapse;
+  }
+
+  /* Let wide tables scroll within their own box on narrow screens
+     instead of forcing the whole page wider than the viewport. */
+  @media (max-width: 600px) {
+    .content table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .content table th,
+    .content table td {
+      white-space: nowrap;
+      padding: 4px 8px;
+    }
   }
 
   hr {
@@ -163,6 +180,8 @@
 
   pre {
     background-color: var(--code-background-color) !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   li::marker {
