@@ -32,6 +32,8 @@ The [original Toolkit prototype](/tools/webpage-archiving/) was built and releas
 
 In December 2025, the Toolkit received investment from the Babelsberg Media Innovation Center to develop a sustainable business plan and product targeting the investigative journalism vertical.
 
+[Zeitwerk](/tools/zeitwerk-timestamping/), our open-source timestamping service, is funded by the Federal Ministry of Education and Research under grant number 16IS26S28, administered through the Prototype Fund.
+
 <img src="/images/logo-bmbf.svg" alt="BMBF logo" width="200px"> <img src="/images/logo-okfn.svg" alt="OKFN logo" width="200px"> <img src="/images/logo-miz.png" alt="MIZ logo" width="200px">
 
 
