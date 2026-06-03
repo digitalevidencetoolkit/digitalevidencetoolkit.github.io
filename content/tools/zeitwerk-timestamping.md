@@ -42,6 +42,8 @@ You submit a hash          →    Witness A signs it
 
 Proofs are self-contained. They don't expire, don't require Zeitwerk to keep existing, and don't need any blockchain to verify. A proof generated today will still be checkable in twenty years with nothing but the standalone verifier and the file it certifies.
 
+Zeitwerk is built to interoperate, not replace — it exports RFC 3161 and C2PA-compatible proofs for existing workflows, and can read OpenTimestamps files, so adopting it is an upgrade path rather than a fork.
+
 ---
 
 ### How it compares
@@ -83,9 +85,9 @@ Proofs are self-contained. They don't expire, don't require Zeitwerk to keep exi
 **The alternatives, in brief:**
 
 <ul class="zw-competitors">
-  <li><strong>OpenTimestamps</strong> — self-hostable and free, but Bitcoin-dependent and single-operator</li>
-  <li><strong>eIDAS Qualified Timestamps</strong> — no crypto, but centralised, proprietary, and costly</li>
-  <li><strong>OriginStamp, Chainpoint</strong> — commercial services, varying crypto use, no federation</li>
+  <li><strong>OpenTimestamps</strong> — self-hostable and free, but Bitcoin-dependent, with no federation between its calendar servers</li>
+  <li><strong>eIDAS Qualified Timestamps</strong> — no crypto, but centralised, proprietary, costly, and legally privileged in court (Zeitwerk complements rather than replaces it)</li>
+  <li><strong>OriginStamp, Chainpoint</strong> (now defunct) — commercial services, varying crypto use, no federation</li>
   <li><strong>Certificate Transparency</strong> — federated and free, but scoped to TLS certificate infrastructure only</li>
 </ul>
 
