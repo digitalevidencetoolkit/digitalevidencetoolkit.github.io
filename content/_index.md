@@ -8,7 +8,7 @@ _〰️ Preserve 〰️ Authenticate 〰️ Annotate 〰️ Present 〰️_
 
 <div style="background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f0 100%); border-left: 4px solid #3273dc; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 4px;">
 <strong style="color: #1a4a6e;">📰 Latest news <i>(June 2, 2026)</i></strong><br/>
-<span style="color: #2c5a7a;">We have begun a research period focusing on Zeitwerk, our new free and open-source timestamping service, thanks to support from the <a href="https://prototypefund.de" style="color: #3273dc;">Prototype Fund</a>. <a href="./news/zeitwerk-prototype-fund" style="color: #3273dc;">Read more →</a></span><br/>
+<span style="color: #2c5a7a;">We have begun a research period focusing on <a href="https://digitalevidencetoolkit.org/tools/zeitwerk-timestamping/">Zeitwerk</a>, our new free and open-source timestamping service, thanks to support from the <a href="https://prototypefund.de" style="color: #3273dc;">Prototype Fund</a>.</span><br/>
 <span style="color: #2c5a7a">We are also deploying <a href="https://evidx.de/?campaign=dept" style="color: #3273dc;">evidx.de</a> to pilot media partners. Built in partnership with <a href="https://dot.studio" style="color: #3273dc;">Dot•Studio</a>, with seed investment from the <a href="https://www.miz-babelsberg.de/" style="color: #3273dc;">Babelsberg Media Innovation Center</a>.</span>
 </div>
 
@@ -30,12 +30,12 @@ We integrate advanced chain-of-custody tracking and OSI verification workflows i
 
 <img src="https://basilesimon.fr/assets/dept-evidx.png" alt="evidx.de" style="width: 200px; max-width: 100%; margin-top: 1rem; margin-bottom: -1rem; display: block;"/>
 
-#### **Web Archiving Solution**:
+#### **Web Archiving**
 
 <p class="p-0">Securely capture and preserve web content with our easy-to-use browser extension. Automatically store web pages, metadata, and DNS records in a cryptographically verifiable, tamper-evident data structures. Ideal for legal discovery, journalistic investigations, and compliance needs. <br/>
 <a href="https://evidx.de/?campaign=dept">→ evidx.de</a></p>
 
-#### **Zeitwerk — Trusted Timestamping**
+#### **Trusted, Durable Timestamping**
 
 <p class="p-0"><img src="/images/logo-zeitwerk.png" alt="Zeitwerk logo" style="width: 80px; float: right; margin: 0 0 0.5rem 1rem;"/>Prove that a file existed at a moment in time — no blockchain, no fees, no vendor lock-in. Zeitwerk is a free, open-source timestamping service built on a federation of independent European operators, producing proofs that stay verifiable for decades even if Zeitwerk itself disappears. <br/>
 <a href="./tools/zeitwerk-timestamping">→ Read more</a></p>
