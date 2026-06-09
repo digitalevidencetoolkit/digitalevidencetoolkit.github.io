@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Evidence-Preservation on The Digital Evidence Preservation Toolkit</title><link>https://digitalevidencetoolkit.org/tags/evidence-preservation</link><author>Basile Simon</author><description>Preserve, authenticate and present digital evidence with advanced chain-of-custody tracking. Ensure data integrity and courtroom-ready results for legal professionals, archivists, and investigators.</description><generator>Hugo 0.158.0</generator><language>en</language><copyright>Copyright 2020-2026 Basile Simon. Licensed under CC BY 4.0.</copyright><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://digitalevidencetoolkit.org/tags/evidence-preservation/index.xml" rel="self" type="application/rss+xml"/><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license><item><title>Zeitwerk — Trusted timestamps without the blockchain</title><link>https://digitalevidencetoolkit.org/tools/zeitwerk-timestamping</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://digitalevidencetoolkit.org/tools/zeitwerk-timestamping/</guid><description>Zeitwerk is a free, open-source timestamping service built on a coordinated federation of independent European operators, with no cryptocurrency dependency.</description><content:encoded><![CDATA[<p>In our constituencies, proving that a file existed exactly like this before a potential controversy is a requirement. <em>&ldquo;I owned a copy of this file at this date,&rdquo;</em> I want to be able to say to a court.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Evidence-Preservation on The Digital Evidence Preservation Toolkit</title><link>https://digitalevidencetoolkit.org/tags/evidence-preservation</link><author>Basile Simon</author><description>Preserve, authenticate and present digital evidence with advanced chain-of-custody tracking. Ensure data integrity and courtroom-ready results for legal professionals, archivists, and investigators.</description><generator>Hugo 0.158.0</generator><language>en</language><copyright>Copyright 2020-2026 Basile Simon. Licensed under CC BY 4.0.</copyright><lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://digitalevidencetoolkit.org/tags/evidence-preservation/index.xml" rel="self" type="application/rss+xml"/><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license><item><title>Create web archives as quickly as you bookmark a page</title><link>https://digitalevidencetoolkit.org/tools/raindrop-to-browsertrix</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://digitalevidencetoolkit.org/tools/raindrop-to-browsertrix/</guid><description>Some glue between Raindrop, a bookmarking service and API, and Browsertrix Cloud to produce forensic-quality web archives</description><content:encoded><![CDATA[<p>In response to a quick-turnaround investigation, we have put together a quick single-page preservation pipeline that turns a researcher&rsquo;s <a href="https://raindrop.io/">Raindrop.io bookmarks</a> into a tamper-evident, cryptographically-verifiable web archive, with full-page WACZ preservation in <a href="https://webrecorder.net/browsertrix/">Browsertrix Cloud</a> behind every saved URL. The researcher clicks &ldquo;save&rdquo; in the browser they already use; a preservation chain runs behind the scenes.</p>
+<p>It builds on Simon Willison&rsquo;s <a href="https://simonwillison.net/tags/git-scraping/">very 2020 pattern</a> using Github Actions as a scheduled runner.</p>
+<hr>
+<h4 id="how-it-works">How it works</h4>
+<p>A researcher clips a URL in Raindrop.io — the same bookmark manager they already use, or at least a very pleasant and fast browser extension. That&rsquo;s it from their perspective.</p>
+<p>On schedule, a <a href="https://github.com/features/actions">GitHub Actions workflow</a> pulls new bookmarks from the Raindrop API and writes each one as its own JSON file to a dedicated <code>bookmarks-data</code> git branch with some metadata, including the <code>accountId</code> of the researcher who saved it. The branch is append-only(-ish) and diffable: a versioned record of who saw what, and when.</p>
+<p>Each new commit fires a second workflow that hands the URL to a Browsertrix Cloud account for a single-page crawl. The result is a hashed, replayable archive of the full page as it appeared at capture time, which lands in a per-project collection. The crawl ID is logged to <code>crawls.csv</code> on a separate <code>crawls-data</code> branch, acting as the join key between the bookmark and its archived form.</p>
+<pre tabindex="0"><code>   Researcher clicks &#34;save&#34; in Raindrop.io
+                       │
+                       ▼
+   ╭───────────────────────────────────╮
+   │  ① bookmark JSON  (git branch)    │  who · when · tags
+   ╰───────────────────┬───────────────╯
+                       │  triggers a crawl
+                       ▼
+   ╭───────────────────────────────────╮
+   │  ② crawls.csv row (git branch)    │  bookmarkId ↔ crawl_id
+   ╰───────────────────┬───────────────╯
+                       │  join key
+                       ▼
+   ╭───────────────────────────────────╮
+   │  ③ WACZ artefact (Browsertrix)    │  full page, hashed
+   ╰───────────────────────────────────╯
+
+   Three artefacts. Three independent stores.
+   One verifiable trail from click to capture.
+</code></pre><p>Multi-account mode lets a team pool separate Raindrop libraries into a single shared corpus, each item tagged with its origin, and a small <code>projects.json</code> routes bookmarks to per-project Browsertrix collections so several investigations can run in parallel without cross-contamination. We gave the two researchers separate Raindrop accounts and can still attribute who requested which crawl.</p>
+<hr>
+<h3 id="how-it-compares">How it compares</h3>
+<p>✅ No servers ✅ No databases ✅ Per-researcher provenance ✅ Team-ready-ish</p>
+<p><strong>The alternatives, in brief:</strong></p>
+<ul>
+<li><strong>Wayback Machine &ldquo;Save Page Now&rdquo; / Archive.today</strong> — free and durable, but perhaps more awkward to organise by investigation, and you can&rsquo;t structure team workflows around them. The resulting files are hosted by the archives.</li>
+<li><strong>Screenshots, <code>wget</code>, SingleFile, monolith</strong> — trivial to produce but more trivial to dispute, no chain of custody, &ldquo;who saved this and when&rdquo; lives in fragile filesystem metadata</li>
+<li><strong>Hanzo, Pagefreezer &amp; other enterprise web-preservation suites</strong> — full-featured, but perhaps expensive, proprietary, and built for corporate compliance rather than investigative journalism</li>
+<li><strong>Browsertrix Cloud on its own</strong> — excellent crawler; you still have to feed it URLs by hand.</li>
+</ul>
+<hr>
+<h4 id="who-is-it-for">Who is it for?</h4>
+<p>Investigative journalists · OSINT researchers · Human rights documenters · Cross-border reporting teams · Litigation support investigators · Any team running a long-form investigation built on web sources</p>
+<hr>
+<h4 id="status">Status</h4>
+<p>This project is in pilot deployment with <a href="https://dispatch.starlinglab.org/p/pilot-project-on-making-web-preservation">Airwars on cross-border investigation into the apparent smuggling of luxury cars from Europe to Russia</a> — it preserved <strong>more than 9,000 unique URLs totalling 98 GiB</strong>, including a six-week recurring crawl of a Belarus–Lithuania border webcam (~3,800 captures) that turned a self-overwriting page into a preserved time series.</p>
+<hr>
+<p><strong>Stay informed</strong></p>
+<p>Reach out to <code>&lt;hi@digitalevidencetoolkit.org&gt;</code> or subscribe to our newsletter:</p>
+<iframe src="https://digitalevidencetoolkit.substack.com/embed" width="100%" height="320" style="border:0px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+]]></content:encoded><category>web-archiving</category><category>integrity</category><category>evidence-preservation</category><dc:description>Some glue between Raindrop, a bookmarking service and API, and Browsertrix Cloud to produce forensic-quality web archives</dc:description><dc:date>2026-06-01T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights><dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license></item><item><title>Zeitwerk — Trusted timestamps without the blockchain</title><link>https://digitalevidencetoolkit.org/tools/zeitwerk-timestamping</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://digitalevidencetoolkit.org/tools/zeitwerk-timestamping/</guid><description>Zeitwerk is a free, open-source timestamping service built on a coordinated federation of independent European operators, with no cryptocurrency dependency.</description><content:encoded><![CDATA[<p>In our constituencies, proving that a file existed exactly like this before a potential controversy is a requirement. <em>&ldquo;I owned a copy of this file at this date,&rdquo;</em> I want to be able to say to a court.</p>
 <p><strong>Timestamping is how you prove it — and as AI-generated content erodes baseline trust in digital media, it&rsquo;s becoming critical infrastructure for democracy. Today&rsquo;s options are inadequate: legal notaries are expensive and inaccessible, commercial services create vendor lock-in, and Bitcoin-based solutions tie essential infrastructure to an energy-intensive system with volatile governance.</strong></p>
 <style>
 .zeitwerk-intro { display: flex; align-items: center; gap: 2rem; margin: 1.5rem 0; }
