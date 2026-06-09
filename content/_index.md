@@ -45,6 +45,11 @@ We integrate advanced chain-of-custody tracking and OSI verification workflows i
 <p class="p-0">Make Wordpress a stronger evidence-management platform for your team. Include metadata analysis, Content Credentials presentation, chain of custody tracking, and court-ready exports. <br/>
 <a href="./tools/wordpress-plugin">→ Read more</a></p>
 
+#### **Investigation-Grade Web Archiving from a Browser Click**
+
+A simple pipeline turns a researcher's Raindrop.io bookmarks into a tamper-evident, cryptographically-verifiable web archive. Built for investigators who need to capture a fleeting source — a deleted post, a vanishing listing, a self-overwriting webcam — without leaving their workflow.  
+[→ Read more](/tools/raindrop-to-browsertrix/)
+
 #### **Customizable CMS Integrations**:
 
 <p class="p-0">Expand your workflows with integrations into popular CMS platforms like Strapi, Notion, and Uwazi.</p>
