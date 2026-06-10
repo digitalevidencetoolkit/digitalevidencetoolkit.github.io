@@ -67,6 +67,18 @@ This project is in pilot deployment with [Airwars on cross-border investigation 
 
 ---
 
+#### Code
+
+Two repositories, built at different times for a narrowly-defined deployment:
+
+| | [`digitalevidencetoolkit/raindrop-bookmarks-fetcher`](https://github.com/digitalevidencetoolkit/raindrop-bookmarks-fetcher) | [`starlinglab/airwars-raindrop-bookmarks`](https://github.com/starlinglab/airwars-raindrop-bookmarks) |
+|---|---|---|
+| **Role** | Generic, reusable fetch layer | Full pipeline: fetch → route → crawl → track |
+| **What it does** | Pulls bookmarks from Raindrop.io, writes individual JSON files, handles single- and multi-account auth with token refresh | Extends the fetcher with Browsertrix crawl triggering, project routing, WACZ inspection scripts, and crawl-ID tracking in CSV |
+| **Starting point** | Any new deployment | Airwars pilot; reference implementation of the complete three-store chain |
+
+---
+
 **Stay informed**
 
 Reach out to `<hi@digitalevidencetoolkit.org>` or subscribe to our newsletter:
