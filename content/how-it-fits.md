@@ -4,9 +4,9 @@ description: "The Digital Evidence Preservation Toolkit is a research programme,
 menu: "main"
 ---
 
-Part company, product, and consultancy – the Toolkit is an umbrella for my research: a (hopefully) coherent set of questions about how digital evidence gets made, broken, and made trustworthy again, with tools & demos built to answer those questions in practice.
+The Toolkit is an umbrella for several research strands: a _(hopefully)_ coherent set of questions about **how digital evidence gets made, broken, and made trustworthy again**, with tools & demos built to answer those questions in practice.
 
-Each project is independent — Zeitwerk is its own service, evidx.de its own product, the WordPress plugin its own codebase — but they share a baseplate of principles and design choices that make them snap together. From that shared problem, each tool is grounded in the practice of digital investigations, journalism and human rights documentation.
+Each project is independent but they share a baseplate of principles and design choices that make them snap together. From that shared problem, each tool is grounded in the practice of digital investigations, journalism and human rights documentation.
 
 ---
 
@@ -76,35 +76,35 @@ Each project is independent — Zeitwerk is its own service, evidx.de its own pr
 <div class="brick-studs"><span class="stud"></span><span class="stud"></span><span class="stud"></span><span class="stud"></span></div>
 <div class="brick-phase">Research &amp; writing</div>
 <div class="brick-name">Digital investigations research</div>
-<div class="brick-desc">The questions the tools exist to answer: how digital evidence gets made, broken, and made trustworthy again. Grounded in fieldwork with newsrooms and human-rights teams, and research at Stanford — with findings shared as they develop in the newsletter.</div>
-<a class="brick-link" href="/newsletter/">→ The newsletter</a>
+<div class="brick-desc">The questions the tools exist to answer, and updates about the projects.</div>
+<a class="brick-link" href="https://digitalevidencetoolkit.substack.com">→ See you on Substack</a>
 </div>
 <div class="brick brick-blue">
 <div class="brick-studs"><span class="stud"></span><span class="stud"></span><span class="stud"></span><span class="stud"></span></div>
 <div class="brick-phase">Capture &amp; Archive</div>
 <div class="brick-name">evidx.de</div>
-<div class="brick-desc">A browser extension that turns a single click into a tamper-evident, cryptographically verifiable web archive — WACZ format, full-page, chain-of-custody baked in. Built with Dot•Studio, deployed to pilot media partners.</div>
+<div class="brick-desc">Capture, cryptographically sign, and preserve web content — creating tamper-evident archives that hold up under scrutiny. On your infrastructure, under your control.</div>
 <a class="brick-link" href="https://evidx.de/?campaign=dept">→ evidx.de</a>
 </div>
 <div class="brick brick-orange">
 <div class="brick-studs"><span class="stud"></span><span class="stud"></span></div>
 <div class="brick-phase">Workflow</div>
 <div class="brick-name">Raindrop → Browsertrix</div>
-<div class="brick-desc">Turns a researcher's existing bookmarks into a forensic-quality archive. 9,000 URLs, 98 GiB, in production with Airwars.</div>
+<div class="brick-desc">A workflow bridge between a bookmarks app and forensic-quality archives. 9,000 URLs, 98 GiB, case study with Airwars.</div>
 <a class="brick-link" href="/tools/raindrop-to-browsertrix/">→ Read more</a>
 </div>
 <div class="brick brick-red">
 <div class="brick-studs"><span class="stud"></span><span class="stud"></span><span class="stud"></span></div>
 <div class="brick-phase">Authenticate</div>
 <div class="brick-name">Zeitwerk</div>
-<div class="brick-desc">Trusted timestamps without blockchain or vendor lock-in. A federated European network of independent witnesses. Proofs stay verifiable for decades offline. Funded by Prototype Fund 2026.</div>
+<div class="brick-desc">Trusted timestamps without blockchain or vendor lock-in. Funded by Prototype Fund 2026.</div>
 <a class="brick-link" href="/tools/zeitwerk-timestamping/">→ Read more</a>
 </div>
 <div class="brick brick-ghost brick-ghost-half">
 <div class="brick-studs"><span class="stud"></span><span class="stud"></span></div>
 <div class="brick-phase">Coming soon</div>
 <div class="brick-name">WordPress Plugin</div>
-<div class="brick-desc">Chain-of-custody tracking, C2PA Content Credentials, and court-ready exports baked into the CMS investigative teams already use.</div>
+<div class="brick-desc">Chain-of-custody tracking, C2PA Content Credentials, and court-ready exports baked into the CMS you already use.</div>
 </div>
 <div class="brick brick-ghost">
 <div class="brick-studs"><span class="stud"></span><span class="stud"></span></div>
@@ -116,13 +116,12 @@ Each project is independent — Zeitwerk is its own service, evidx.de its own pr
 </div>
 <div class="lego-baseplate-bottom">
 <div class="baseplate-inner">
-<h3>The baseplate — shared across everything</h3>
+<h3>Shared baseplate principles and ideas</h3>
 <ul class="principles">
 <li>🔐 Cryptographic hashing (SHA-256, Merkle trees)</li>
 <li>📋 Append-only, tamper-evident audit trails</li>
 <li>🔗 Open, interoperable formats (WACZ, RFC 3161, C2PA)</li>
-<li>🇪🇺 EU-grounded infrastructure, no US cloud dependency</li>
-<li>🔓 Free and open-source at every layer</li>
+<li>🇪🇺 EU-grounded infrastructure</li>
 <li>⚖️ Designed for legal admissibility from day one</li>
 </ul>
 </div>
