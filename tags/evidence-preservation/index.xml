@@ -42,6 +42,35 @@
 <h4 id="status">Status</h4>
 <p>This project is in pilot deployment with <a href="https://dispatch.starlinglab.org/p/pilot-project-on-making-web-preservation">Airwars on cross-border investigation into the apparent smuggling of luxury cars from Europe to Russia</a> — it preserved <strong>more than 9,000 unique URLs totalling 98 GiB</strong>, including a six-week recurring crawl of a Belarus–Lithuania border webcam (~3,800 captures) that turned a self-overwriting page into a preserved time series.</p>
 <hr>
+<h4 id="code">Code</h4>
+<p>Two repositories, built at different times for a narrowly-defined deployment:</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th><a href="https://github.com/digitalevidencetoolkit/raindrop-bookmarks-fetcher"><code>digitalevidencetoolkit/raindrop-bookmarks-fetcher</code></a></th>
+          <th><a href="https://github.com/starlinglab/airwars-raindrop-bookmarks"><code>starlinglab/airwars-raindrop-bookmarks</code></a></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Role</strong></td>
+          <td>Generic, reusable fetch layer</td>
+          <td>Full pipeline: fetch → route → crawl → track</td>
+      </tr>
+      <tr>
+          <td><strong>What it does</strong></td>
+          <td>Pulls bookmarks from Raindrop.io, writes individual JSON files, handles single- and multi-account auth with token refresh</td>
+          <td>Extends the fetcher with Browsertrix crawl triggering, project routing, WACZ inspection scripts, and crawl-ID tracking in CSV</td>
+      </tr>
+      <tr>
+          <td><strong>Starting point</strong></td>
+          <td>Any new deployment</td>
+          <td>Airwars pilot; reference implementation of the complete three-store chain</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
 <p><strong>Stay informed</strong></p>
 <p>Reach out to <code>&lt;hi@digitalevidencetoolkit.org&gt;</code> or subscribe to our newsletter:</p>
 <iframe src="https://digitalevidencetoolkit.substack.com/embed" width="100%" height="320" style="border:0px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
