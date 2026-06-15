@@ -8,7 +8,7 @@ The Toolkit started from a funded software grant, which enabled its main author,
 
 Presently based in Berlin, Basile is a multi-disciplinary researcher bridging between engineering, law, and journalism in promoting accountability for causing harm to civilians.
 
-As a fellow at Stanford Electrical Engineering, he is part of the [Starling Lab for Data Integrity](https://starlinglab.org) (Stanford/USC), and is a resident with the European Center for Constitutional and Human Rights (ECCHR) in the cross-NGO investigative group [Investigative Commons](https://investigative-commons.org/).  
+As a fellow at Stanford Electrical Engineering, he is part of the [Starling Lab for Data Integrity](https://starlinglab.org) (Stanford/USC), and is a resident in the cross-NGO investigative group [Investigative Commons](https://investigative-commons.org/).  
 He co-founded [Airwars](https://airwars.org) in 2014 and worked for the BBC, Reuters, and The Times and The Sunday Times.
 
 ---
@@ -30,11 +30,8 @@ Architecture and workflow graphics by [La Loma](https://laloma.info). Newsletter
 
 The [original Toolkit prototype](/tools/webpage-archiving/) was built and released in August 2021 with the support of the Prototype Fund, the German Federal Ministry for Education and Research (BMBF, grant number 01IS21S26), the Open Knowledge Foundation, with an additional contribution from Amazon Web Services – all of which ended in 2021.
 
-In December 2025, the Toolkit received investment from the Babelsberg Media Innovation Center to develop a sustainable business plan and product targeting the investigative journalism vertical.
+In December 2025, the Toolkit received investment from the Babelsberg Media Innovation Center to develop a sustainable business plan and product targeting the investigative journalism vertical. The result is [the evidx.de](https://evidx.de) product.
 
 [Zeitwerk](/tools/zeitwerk-timestamping/), our open-source timestamping service, is funded by the Federal Ministry of Education and Research under grant number 16IS26S28, administered through the Prototype Fund.
 
 <img src="/images/logo-bmbf.svg" alt="BMBF logo" width="200px"> <img src="/images/logo-okfn.svg" alt="OKFN logo" width="200px"> <img src="/images/logo-miz.png" alt="MIZ logo" width="200px">
-
-
-
