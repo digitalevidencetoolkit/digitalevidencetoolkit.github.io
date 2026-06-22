@@ -32,6 +32,9 @@ params:
   defaultImage: "/images/og-default.png"
   images: ["/images/og-default.png"]
 
+  # Organization logo for schema.org (square works best for rich results)
+  logo: "/images/logo.png"
+
   # Licensing and attribution for AI crawlers
   license: "https://creativecommons.org/licenses/by/4.0/"
   licenseName: "CC BY 4.0"
